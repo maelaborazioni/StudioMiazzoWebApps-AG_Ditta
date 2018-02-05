@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_tipiindirizzo",
+items:[
+{foreignColumnName:"ditta",operator:0,primaryDataProviderID:"globals.one",typeid:23,uuid:"FBB61457-6C9B-4ADE-876C-7A50DEE74F33"}
+],
+joinType:0,
+name:"_to_tab_tipiindirizzo_ditta",
+primaryDataSource:"db:/ma_anagrafiche/tab_tipiindirizzo",
+typeid:22,
+uuid:"490EB48F-40D0-4941-8C35-3D995033E901"

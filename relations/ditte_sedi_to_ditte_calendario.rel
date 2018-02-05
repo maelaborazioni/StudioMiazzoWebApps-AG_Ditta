@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_calendario",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"CC60B643-D99B-4ADF-9BCB-D44F4A63338F"}
+],
+joinType:0,
+name:"ditte_sedi_to_ditte_calendario",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedi",
+typeid:22,
+uuid:"B3BC5979-97A8-427C-979F-E1CC1BF289BF"

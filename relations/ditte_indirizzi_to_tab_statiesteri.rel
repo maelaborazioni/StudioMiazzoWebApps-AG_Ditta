@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_statiesteri",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"codstatoestero",typeid:23,uuid:"20FF6FEF-9D3D-4F62-8177-1DC94F97BDF5"}
+],
+joinType:0,
+name:"ditte_indirizzi_to_tab_statiesteri",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+typeid:22,
+uuid:"8400FF74-0DCB-466A-B92A-A3953263316F"

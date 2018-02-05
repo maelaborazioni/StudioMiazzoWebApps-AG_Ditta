@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_inailposizioni",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"03E303DC-B2AA-4022-9362-5EBE8A9A1603"}
+],
+joinType:1,
+name:"ditte_to_ditte_inailposizioni",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"6A78DB95-5CE0-4EAE-A6DD-84F226E831AC"

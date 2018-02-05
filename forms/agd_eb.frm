@@ -1,0 +1,14 @@
+dataSource:"db:/ma_anagrafiche/ditte_contratti",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"75C66976-AB81-47D9-9FDE-448558112FA2"
+}
+],
+name:"agd_eb",
+size:"400,480",
+typeid:3,
+uuid:"9EA92578-4BC9-44AE-9C24-8B66EF51D07A"

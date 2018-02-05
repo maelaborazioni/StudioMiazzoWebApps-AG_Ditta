@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_tipiindirizzo",
+items:[
+{foreignColumnName:"codice",primaryDataProviderID:"codtipoindirizzo",typeid:23,uuid:"58CE3748-42AB-4942-A82F-1E693BC2CB2F"}
+],
+joinType:1,
+name:"ditte_indirizzi_to_tab_tipiindirizzo",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+typeid:22,
+uuid:"0F271BB4-E477-45AF-98E9-809912ADC743"

@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_comuniitalia",
+items:[
+{foreignColumnName:"codcomune",primaryDataProviderID:"codcomune770",typeid:23,uuid:"DFD4B65C-DDA3-4869-9135-226A3400723D"}
+],
+joinType:1,
+name:"ditte_inailposizioni_to_tab_comuniitalia",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inailposizioni",
+typeid:22,
+uuid:"A206DFB4-096F-46A7-BEDB-C2CEA705CD98"

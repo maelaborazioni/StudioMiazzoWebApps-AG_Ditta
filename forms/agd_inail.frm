@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"1108740C-90C3-4388-9763-2D86C3B7AD9B"
+}
+],
+name:"agd_inail",
+size:"400,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"4471F74E-DE57-4135-ABB1-A646D7353BEB"

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2tabtipoliquidratei",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"tipoliquidazione",typeid:23,uuid:"ADD108FD-A958-417F-8215-2AFCE104EF6B"}
+],
+joinType:0,
+name:"ditte_ratei_to_e2tabtipoliquidratei",
+primaryDataSource:"db:/ma_anagrafiche/ditte_ratei",
+typeid:22,
+uuid:"D2D3E402-BC4A-4646-A019-1C250189ADA6"

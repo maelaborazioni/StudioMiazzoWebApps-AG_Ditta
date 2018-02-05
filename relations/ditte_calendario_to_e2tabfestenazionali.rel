@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2tabfestenazionali",
+items:[
+{foreignColumnName:"idfestenazionali",operator:0,primaryDataProviderID:"idfestenazionali",typeid:23,uuid:"1705863A-0989-4032-A375-8C3E02DE155A"}
+],
+joinType:0,
+name:"ditte_calendario_to_e2tabfestenazionali",
+primaryDataSource:"db:/ma_anagrafiche/ditte_calendario",
+typeid:22,
+uuid:"DA0D2D37-29A3-474F-B504-981387EF7BE5"

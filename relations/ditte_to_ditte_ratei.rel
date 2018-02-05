@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:false,
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_ratei",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"175D4BB7-0213-4BC3-873D-854E8590800D"}
+],
+joinType:1,
+name:"ditte_to_ditte_ratei",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"683B7A09-1D01-4462-B37D-26C23A405364"

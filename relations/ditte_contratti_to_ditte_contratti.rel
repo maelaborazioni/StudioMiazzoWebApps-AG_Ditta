@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_contratti",
+joinType:1,
+name:"ditte_contratti_to_ditte_contratti",
+primaryDataSource:"db:/ma_anagrafiche/ditte_contratti",
+typeid:22,
+uuid:"EBA6D908-D3E8-4F40-B729-40ADEC17E37B"

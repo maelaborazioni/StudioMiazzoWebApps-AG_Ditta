@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_inailsedi",
+items:[
+{foreignColumnName:"iddittainailposizione",primaryDataProviderID:"iddittainailposizione",typeid:23,uuid:"C9305486-C771-4BC6-B957-5F3FDB4497A1"}
+],
+name:"ditte_inailposizioni_to_ditte_inailsedi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inailposizioni",
+typeid:22,
+uuid:"85ED33A8-5CEE-40EB-835C-3D8617187005"

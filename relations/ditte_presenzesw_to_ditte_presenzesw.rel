@@ -1,0 +1,7 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenzesw",
+joinType:1,
+name:"ditte_presenzesw_to_ditte_presenzesw",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenzesw",
+typeid:22,
+uuid:"928A7A31-0B03-4769-A40F-FE7FD0AEF627"

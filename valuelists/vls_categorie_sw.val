@@ -1,0 +1,11 @@
+addEmptyValue:1,
+dataProviderID1:"codice",
+dataProviderID2:"descrizione",
+dataSource:"db:/ma_anagrafiche/tab_swcategorie",
+name:"vls_categorie_sw",
+returnDataProviders:1,
+separator:" - ",
+showDataProviders:3,
+typeid:34,
+uuid:"DE78592C-79C4-4082-995C-A71545F811F2",
+valueListType:1

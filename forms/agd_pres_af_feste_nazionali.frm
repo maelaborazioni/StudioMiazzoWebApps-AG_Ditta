@@ -1,0 +1,14 @@
+dataSource:"db:/ma_presenze/e2tabfestenazionali",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"C2D43523-FA4D-46CE-90D4-74BA5F036E4C"
+}
+],
+name:"agd_pres_af_feste_nazionali",
+styleName:"leaf_style",
+typeid:3,
+uuid:"A4BA44E7-671E-430C-A1A2-141A4CEED868"

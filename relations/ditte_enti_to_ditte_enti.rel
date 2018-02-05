@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_enti",
+joinType:1,
+name:"ditte_enti_to_ditte_enti",
+primaryDataSource:"db:/ma_anagrafiche/ditte_enti",
+typeid:22,
+uuid:"D96509FE-BB8D-4C88-9B8E-A113E022DA83"

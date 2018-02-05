@@ -1,0 +1,8 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_turni",
+initialSort:"codice asc",
+joinType:0,
+name:"ditte_turni_to_ditte_turni",
+primaryDataSource:"db:/ma_anagrafiche/ditte_turni",
+typeid:22,
+uuid:"21B4A6F9-5A66-4502-8BA8-3C1137C4FC06"

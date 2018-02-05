@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte_presenzeschedainterna",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:456,
+partType:5,
+typeid:19,
+uuid:"F1158E20-17AF-4ECA-B062-B71E8F0B7C5A"
+}
+],
+name:"agd_pres_schedaditta",
+size:"800,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"8E9ABF18-CCB5-4B65-B0CD-05E78DF9681A"

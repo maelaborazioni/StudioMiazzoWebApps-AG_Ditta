@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+items:[
+{foreignColumnName:"iddittaindirizzo",operator:0,primaryDataProviderID:"iddittaindirizzo",typeid:23,uuid:"7BB38E14-67ED-40CF-83F1-239ED569E570"}
+],
+joinType:0,
+name:"ditte_inps_to_ditte_indirizzi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inps",
+typeid:22,
+uuid:"3C1313B6-5F81-41FB-86EB-E8D1A0E27A60"

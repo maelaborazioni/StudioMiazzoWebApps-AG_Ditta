@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2tabfestenazionali",
+items:[
+{foreignColumnName:"controllasedelavoro",operator:0,primaryDataProviderID:"globals.one",typeid:23,uuid:"0E73562F-0D87-43AE-A9DB-75CCCFDF3B30"},
+{foreignColumnName:"idfestenazionali",operator:0,primaryDataProviderID:"idfestenazionali",typeid:23,uuid:"52CD5E81-B4DB-493D-BF2E-6776C6E39DB7"}
+],
+joinType:0,
+name:"ditte_calendario_to_e2tabfestenazionali_festapatronale",
+primaryDataSource:"db:/ma_anagrafiche/ditte_calendario",
+typeid:22,
+uuid:"B7948D3A-6B04-443D-A39C-A03E38EDC2E0"

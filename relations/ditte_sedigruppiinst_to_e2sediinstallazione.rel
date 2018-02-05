@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2sediinstallazione",
+items:[
+{foreignColumnName:"idgruppoinst",operator:0,primaryDataProviderID:"idgruppoinst",typeid:23,uuid:"B1EF4974-BEEA-43D3-BB2B-26509B0640B9"}
+],
+joinType:0,
+name:"ditte_sedigruppiinst_to_e2sediinstallazione",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedigruppiinst",
+typeid:22,
+uuid:"6B3DAD47-8F5D-4D20-8D36-6C53A0998FB6"

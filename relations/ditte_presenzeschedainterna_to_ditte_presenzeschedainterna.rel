@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenzeschedainterna",
+joinType:0,
+name:"ditte_presenzeschedainterna_to_ditte_presenzeschedainterna",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenzeschedainterna",
+typeid:22,
+uuid:"F1B8D3B2-8063-4360-AF3A-FFBA3855104E"

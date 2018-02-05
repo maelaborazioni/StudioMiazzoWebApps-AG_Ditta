@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_pianificazionerighe",
+items:[
+{foreignColumnName:"iddittapianificazione",operator:0,primaryDataProviderID:"iddittapianificazione",typeid:23,uuid:"01F59CCF-EF86-4802-9170-FAE9747B891D"}
+],
+joinType:0,
+name:"ditte_pianificazione_to_ditte_pianificazionerighe",
+primaryDataSource:"db:/ma_anagrafiche/ditte_pianificazione",
+typeid:22,
+uuid:"1D2393BD-C31C-46C3-8A4C-46F826AFEC73"

@@ -1,0 +1,16 @@
+dataSource:"db:/ma_anagrafiche/ditte_schedastoricadettaglio",
+extendsID:"-1",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"C6243B34-DAF8-476F-93E6-8B34D69C61CA"
+}
+],
+name:"agd_schedastorica_dettaglio",
+showInMenu:true,
+size:"640,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"4E470BE5-FE14-4C06-B67D-08C271C5E05F"

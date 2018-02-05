@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_inailsedi",
+joinType:1,
+name:"ditte_inailsedi_to_ditte_inailsedi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inailsedi",
+typeid:22,
+uuid:"4B51A97F-EF3C-4655-B0C2-B1A884F7235A"

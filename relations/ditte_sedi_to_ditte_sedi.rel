@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_sedi",
+joinType:1,
+name:"ditte_sedi_to_ditte_sedi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedi",
+typeid:22,
+uuid:"315B3846-A578-4515-923F-36CB947B0E7B"

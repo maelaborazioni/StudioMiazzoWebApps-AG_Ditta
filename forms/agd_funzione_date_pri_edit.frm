@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte_funzionipersone",
+extendsID:"CE604C73-C428-41ED-A175-97B8078F400B",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"43B06226-85E7-4BA3-9957-E86BD7AC2025"
+}
+],
+name:"agd_funzione_date_pri_edit",
+size:"710,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"2A7AA6CB-5CF6-488F-9173-6CD55AF3745E"

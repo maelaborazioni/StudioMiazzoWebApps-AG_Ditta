@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_common/tab_enti",
+items:[
+{foreignColumnName:"idtabente",primaryDataProviderID:"idtabente",typeid:23,uuid:"76A07C91-C165-4FBC-8ECC-D6695F54C2FE"}
+],
+joinType:1,
+name:"ditte_enti_to_tab_enti",
+primaryDataSource:"db:/ma_anagrafiche_generale/ditte_enti",
+typeid:22,
+uuid:"3AC4D518-E3C0-4099-8881-0A4DCB2F6781"

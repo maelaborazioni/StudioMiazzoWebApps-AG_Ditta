@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/ditte_sedi",
+items:[
+{foreignColumnName:"iddittaindirizzo",primaryDataProviderID:"iddittaindirizzo",typeid:23,uuid:"2CCADA04-BB1F-4252-B045-CBC5FA2F2267"}
+],
+joinType:1,
+name:"ditte_indirizzi_to_ditte_sedi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+typeid:22,
+uuid:"E02CDB77-C4F9-47C5-898A-AAFAFD5DE557"

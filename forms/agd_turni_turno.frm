@@ -1,0 +1,16 @@
+dataSource:"db:/ma_anagrafiche/ditte_turni",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:450,
+partType:5,
+typeid:19,
+uuid:"1E22272B-F612-4610-8F13-10383F2E37FA"
+}
+],
+name:"agd_turni_turno",
+size:"800,450",
+styleName:"leaf_style",
+typeid:3,
+uuid:"A2456664-474F-4CB3-9BCE-63C79E819428",
+view:3

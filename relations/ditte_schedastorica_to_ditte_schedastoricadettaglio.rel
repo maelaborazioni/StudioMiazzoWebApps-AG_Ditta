@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_schedastoricadettaglio",
+items:[
+{foreignColumnName:"iddittaschedastorica",operator:0,primaryDataProviderID:"iddittaschedastorica",typeid:23,uuid:"12175813-3B02-4B9F-941B-99007A43D0EE"}
+],
+joinType:0,
+name:"ditte_schedastorica_to_ditte_schedastoricadettaglio",
+primaryDataSource:"db:/ma_anagrafiche/ditte_schedastorica",
+typeid:22,
+uuid:"8544F8B2-AAE9-41BE-80AB-EEE91A81B5B6"

@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_ratei",
+joinType:0,
+name:"ditte_ratei_to_ditte_ratei",
+primaryDataSource:"db:/ma_anagrafiche/ditte_ratei",
+typeid:22,
+uuid:"EAEB0FCF-FF64-4960-95AB-9887FC832C50"

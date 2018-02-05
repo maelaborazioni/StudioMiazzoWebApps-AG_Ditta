@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_pianificazione",
+joinType:0,
+name:"ditte_pianificazione_to_ditte_pianificazione",
+primaryDataSource:"db:/ma_anagrafiche/ditte_pianificazione",
+typeid:22,
+uuid:"6B5A374A-99C9-49E3-93A9-2A03F33FF176"

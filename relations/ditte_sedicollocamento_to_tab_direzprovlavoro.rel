@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_direzprovlavoro",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"coduffdirezprovlavoro",typeid:23,uuid:"9BD9169D-FAA4-4C94-8910-6C4134A43DAE"}
+],
+joinType:0,
+name:"ditte_sedicollocamento_to_tab_direzprovlavoro",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedicollocamento",
+typeid:22,
+uuid:"BBD2B5DB-3768-4253-B2DE-1492E658DA82"

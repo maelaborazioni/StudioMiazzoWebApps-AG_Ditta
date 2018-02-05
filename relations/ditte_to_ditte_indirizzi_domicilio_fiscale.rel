@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+allowParentDeleteWhenHavingRelatedRecords:false,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"67DAA334-8871-4C4B-84B4-96F12B3E0C8A"},
+{foreignColumnName:"codtipoindirizzo",primaryDataProviderID:"scopes.globals.codDOMICILIOFISCALE",typeid:23,uuid:"72CFF1B0-25EF-4EC0-B1F9-AD227DE5B148"}
+],
+name:"ditte_to_ditte_indirizzi_domicilio_fiscale",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"CAD4B871-3481-4EDD-9977-D261CEAA193B"

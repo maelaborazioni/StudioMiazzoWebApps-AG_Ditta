@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_common/tab_bancheabi",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"codcab",typeid:23,uuid:"68041CF5-A5C0-4106-B5EB-4524C858875E"}
+],
+joinType:1,
+name:"ditte_banche_to_tab_banchecab",
+primaryDataSource:"db:/ma_anagrafiche/ditte_banche",
+typeid:22,
+uuid:"18CDA01F-8833-4FE3-8A84-1AC68EC376A5"

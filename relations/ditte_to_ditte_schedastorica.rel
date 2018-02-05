@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+allowParentDeleteWhenHavingRelatedRecords:false,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_schedastorica",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"E4E8394A-3544-406C-ACAF-559D7DD10AED"}
+],
+joinType:1,
+name:"ditte_to_ditte_schedastorica",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"571D62F6-7A56-460E-809D-C26658FFC60F"

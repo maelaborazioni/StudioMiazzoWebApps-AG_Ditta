@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_funzionipersoneturni",
+items:[
+{foreignColumnName:"iddittaturno",operator:0,primaryDataProviderID:"iddittaturno",typeid:23,uuid:"08DFA6A2-62A0-4394-B597-82C752529940"}
+],
+joinType:1,
+name:"ditte_turni_to_ditte_funzionipersoneturni",
+primaryDataSource:"db:/ma_anagrafiche/ditte_turni",
+typeid:22,
+uuid:"28FF05C8-A0A6-4274-9050-98A1937B265C"

@@ -1,0 +1,17 @@
+customProperties:"",
+dataSource:"db:/ma_hr/sicurezza_datigenerali",
+extendsID:"3C076162-6D45-4034-9F27-2ADA00E4841B",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"F07836DD-E78A-46C0-B456-EA42FFE30780"
+}
+],
+name:"agd_sicurezza_datigenerali",
+onShowMethodID:"2B85FC8D-2752-4485-8AA6-C84458505F9B",
+size:"400,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"62743EC7-318B-4CD3-9BAC-85738C1A15B2"

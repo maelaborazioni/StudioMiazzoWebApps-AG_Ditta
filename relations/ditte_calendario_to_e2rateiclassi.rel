@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2rateiclassi",
+items:[
+{foreignColumnName:"classerateo",operator:0,primaryDataProviderID:"classerateo",typeid:23,uuid:"BCA8388A-CDB6-4790-9FE4-86DA918697D8"}
+],
+joinType:0,
+name:"ditte_calendario_to_e2rateiclassi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_calendario",
+typeid:22,
+uuid:"99671EB0-5212-48CA-9331-64FD03097E6D"

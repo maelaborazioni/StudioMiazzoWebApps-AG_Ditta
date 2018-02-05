@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte_pianificazione",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"7B4EAEF8-FB8A-4BDC-B02C-9589A6F5F009"
+}
+],
+name:"agd_pres_chiusure",
+size:"400,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"481B338F-1240-441D-B429-B628EA2A2523"

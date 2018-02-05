@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_funzionipersone",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"3BBE89F4-1E74-4CC9-B7CE-3811876C1D49"},
+{foreignColumnName:"codambito",operator:0,primaryDataProviderID:"globals.codSICUREZZA3",typeid:23,uuid:"58D537E2-C61A-4826-B6EE-CCB3D83ACAC4"}
+],
+joinType:0,
+name:"ditte_to_ditte_funzionipersone_sicurezza3",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"A17B20CF-665A-4F45-81BA-B223576AB282"

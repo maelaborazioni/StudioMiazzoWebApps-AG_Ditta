@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenzetracciatiore",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"EBF4AA0F-A065-4D7C-890B-1683239AA992"}
+],
+joinType:1,
+name:"ditte_presenze_to_ditte_presenzetracciatiore",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenze",
+typeid:22,
+uuid:"42659B9D-9B95-448B-974C-D8E2CF6A76D5"

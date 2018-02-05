@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_hr/privacy_datigenerali",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta_sede",typeid:23,uuid:"613B1A57-D5C0-4FC8-8D4F-83D0713A30C7"}
+],
+joinType:0,
+name:"ditte_to_privacy_datigenerali",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"9D57C50B-0C67-4AE3-B48E-1C0A9227AE97"

@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_schedastorica",
+joinType:0,
+name:"ditte_schedastorica_to_ditte_schedastorica",
+primaryDataSource:"db:/ma_anagrafiche/ditte_schedastorica",
+typeid:22,
+uuid:"BD631385-E467-4245-9B2F-C8E69C189B4A"

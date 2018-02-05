@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+joinType:1,
+name:"ditte_indirizzi_to_ditte_indirizzi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+typeid:22,
+uuid:"26442757-81AD-486A-AEA4-E26124986CBB"

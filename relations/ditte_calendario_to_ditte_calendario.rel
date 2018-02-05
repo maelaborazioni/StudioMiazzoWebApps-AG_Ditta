@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_calendario",
+joinType:1,
+name:"ditte_calendario_to_ditte_calendario",
+primaryDataSource:"db:/ma_anagrafiche/ditte_calendario",
+typeid:22,
+uuid:"0DEE5AA1-B59B-42A2-B3C6-9489941477B1"

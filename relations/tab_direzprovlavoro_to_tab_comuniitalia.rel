@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_comuniitalia",
+items:[
+{foreignColumnName:"codcomune",operator:0,primaryDataProviderID:"codcomune",typeid:23,uuid:"66D32D57-169A-4A73-AFA7-32D752F2AA4C"}
+],
+joinType:0,
+name:"tab_direzprovlavoro_to_tab_comuniitalia",
+primaryDataSource:"db:/ma_anagrafiche/tab_direzprovlavoro",
+typeid:22,
+uuid:"B9C79B8C-8463-4102-B5EB-95E647E17D0D"

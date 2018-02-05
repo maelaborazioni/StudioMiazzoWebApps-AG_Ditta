@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_sw",
+items:[
+{foreignColumnName:"idtabsw",primaryDataProviderID:"idtracciatoconversione",typeid:23,uuid:"1497E2DB-841F-4628-AB99-99B75491439B"}
+],
+joinType:1,
+name:"ditte_gestioneesterna_to_tab_sw",
+primaryDataSource:"db:/ma_anagrafiche/ditte_gestioneesterna",
+typeid:22,
+uuid:"FA10515B-E81B-41DE-8F76-23854F9D2A67"

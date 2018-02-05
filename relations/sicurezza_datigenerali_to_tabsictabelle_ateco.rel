@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_hr/tabsictabelle",
+items:[
+{foreignColumnName:"idsic_tipotabella",operator:0,primaryDataProviderID:"idsic_tabateco",typeid:23,uuid:"CFB61676-45FA-47D1-87D4-5CAD57F42282"}
+],
+joinType:0,
+name:"sicurezza_datigenerali_to_tabsictabelle_ateco",
+primaryDataSource:"db:/ma_hr/sicurezza_datigenerali",
+typeid:22,
+uuid:"BA877984-661D-4CE1-B52C-5AA351594E12"

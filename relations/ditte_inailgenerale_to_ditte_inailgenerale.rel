@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_inailgenerale",
+joinType:0,
+name:"ditte_inailgenerale_to_ditte_inailgenerale",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inailgenerale",
+typeid:22,
+uuid:"7B36BC7D-8EAE-4A1D-BC40-57CD999625D5"

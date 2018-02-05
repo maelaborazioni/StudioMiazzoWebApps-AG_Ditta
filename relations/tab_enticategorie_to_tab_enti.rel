@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_common/tab_enti",
+items:[
+{foreignColumnName:"idtabentecategoria",operator:0,primaryDataProviderID:"idtabentecategoria",typeid:23,uuid:"00FCEB36-89BC-4E12-BABF-96600356FB94"}
+],
+joinType:1,
+name:"tab_enticategorie_to_tab_enti",
+primaryDataSource:"db:/ma_common/tab_enticategorie",
+typeid:22,
+uuid:"481D35B3-BC3F-47AB-9654-1305C42C62EC"

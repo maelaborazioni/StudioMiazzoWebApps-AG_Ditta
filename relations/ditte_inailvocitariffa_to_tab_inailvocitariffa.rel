@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_inailvocitariffa",
+items:[
+{foreignColumnName:"idinailvocitariffa",operator:0,primaryDataProviderID:"idinailvocitariffa",typeid:23,uuid:"056220A3-8505-4EC5-9EB3-57D64DAC856C"}
+],
+joinType:0,
+name:"ditte_inailvocitariffa_to_tab_inailvocitariffa",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inailvocitariffa",
+typeid:22,
+uuid:"4740DD45-79F4-4A67-A046-07BCDCFF7461"

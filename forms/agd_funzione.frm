@@ -1,0 +1,16 @@
+dataSource:"db:/ma_anagrafiche/ditte",
+extendsID:"-1",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"F3EEC5A4-F4F1-4312-984A-6ACF7EB2DF3A"
+}
+],
+name:"agd_funzione",
+showInMenu:true,
+size:"640,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"66854E1F-46F9-4106-8B66-31D66C0D4A2E"

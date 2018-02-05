@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2eventi",
+items:[
+{foreignColumnName:"idevento",operator:0,primaryDataProviderID:"ideventodagen",typeid:23,uuid:"F6F24D63-15B3-4EEE-B1A6-8A8C52276A98"}
+],
+joinType:0,
+name:"ditte_pianificazione_to_e2eventi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_pianificazione",
+typeid:22,
+uuid:"61CF088B-A823-47CD-BAFF-ABF8373B5158"

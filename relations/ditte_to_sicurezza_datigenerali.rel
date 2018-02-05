@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_hr/sicurezza_datigenerali",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta_sede",typeid:23,uuid:"5BFCA74B-76CC-4715-9469-A8507967D7C1"}
+],
+joinType:0,
+name:"ditte_to_sicurezza_datigenerali",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"F76FA03A-EE77-4FDD-B351-74F33FD12CE0"

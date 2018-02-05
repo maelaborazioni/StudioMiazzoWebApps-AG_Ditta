@@ -1,0 +1,8 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_comuniitalia",
+items:[
+{foreignColumnName:"codcomune",primaryDataProviderID:"codcomune",typeid:23,uuid:"9C8FA82A-7889-44F4-B273-E65DF8662FF3"}
+],
+name:"ditte_indirizzi_to_tab_comuniitalia",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+typeid:22,
+uuid:"4C56F42A-57D6-4EB2-95DC-BD38D6B978DC"

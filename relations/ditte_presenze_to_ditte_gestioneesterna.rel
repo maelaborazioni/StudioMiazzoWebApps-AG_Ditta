@@ -1,0 +1,10 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_gestioneesterna",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"107204D9-2EFA-43C2-BC08-0FC570FA9FFC"}
+],
+joinType:1,
+name:"ditte_presenze_to_ditte_gestioneesterna",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenze",
+typeid:22,
+uuid:"8C582B75-D077-450D-A676-1C848D0ECB78"

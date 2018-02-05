@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_funzionipersone",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"5DB3B0C7-8970-4ECD-9CEC-4F37CC2EB2D2"},
+{foreignColumnName:"codambito",operator:0,primaryDataProviderID:"globals.codCOSTITUZIONEAZIENDALE",typeid:23,uuid:"87ED6476-AD9F-498A-84B7-C231109F62B0"}
+],
+joinType:0,
+name:"ditte_to_ditte_funzionipersone_ditta",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"8CADAFA4-389F-42FF-BB80-1690C01DDD94"

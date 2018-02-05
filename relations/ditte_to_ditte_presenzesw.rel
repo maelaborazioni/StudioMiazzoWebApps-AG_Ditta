@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenzesw",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"CAE2A8F3-09A5-4CB4-A928-341113EC554A"}
+],
+joinType:1,
+name:"ditte_to_ditte_presenzesw",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"3235F317-C2FD-40F5-BCE7-CD05D5E52D18"

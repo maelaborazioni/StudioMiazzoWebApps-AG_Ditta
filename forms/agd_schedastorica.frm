@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte_schedastorica",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"F71EA930-863C-4083-9023-AA9DE268C875"
+}
+],
+name:"agd_schedastorica",
+size:"400,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"C5CDAB15-95D0-4B63-83BD-A9C64ADD3A8E"

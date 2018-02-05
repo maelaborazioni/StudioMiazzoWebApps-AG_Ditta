@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte_presenze",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"DF1DB44A-7442-4461-943D-192B69B66751"
+}
+],
+name:"agd_pres_datigenerali",
+size:"400,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"1E2FE92B-D10C-4F03-A825-A4545769AC16"

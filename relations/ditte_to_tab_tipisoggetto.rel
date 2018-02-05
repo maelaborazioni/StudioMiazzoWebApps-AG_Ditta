@@ -1,0 +1,8 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_tipisoggetto",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"codtiposoggetto",typeid:23,uuid:"CFDDBF77-5772-4DA9-A9CB-272452FB15A7"}
+],
+name:"ditte_to_tab_tipisoggetto",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"6DEB05F0-A81D-4099-8F39-1D4EA93B2CEC"

@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_sedi",
+items:[
+{foreignColumnName:"codtiposede",operator:5,primaryDataProviderID:"globals.codSEDELEGALE",typeid:23,uuid:"21EA0C93-43DF-497A-9B0B-915D7FE99354"},
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"iddittariferimento",typeid:23,uuid:"908AEDD4-492E-4205-BD2D-1FEA6A75B0A2"}
+],
+joinType:1,
+name:"ditte_legami_to_ditte_sedi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_legami",
+typeid:22,
+uuid:"771AA09F-67B3-4519-AC92-AE9248F0BCF8"

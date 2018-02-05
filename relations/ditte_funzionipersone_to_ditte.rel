@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"8E39DE65-C8C0-474E-96E7-0BE196AA33C8"}
+],
+joinType:0,
+name:"ditte_funzionipersone_to_ditte",
+primaryDataSource:"db:/ma_anagrafiche/ditte_funzionipersone",
+typeid:22,
+uuid:"F023B413-3817-4130-9354-C05FDF7F230B"

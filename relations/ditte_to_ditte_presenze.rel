@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenze",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"19F5BD62-6E50-46C6-9A58-99CD21984C96"}
+],
+name:"ditte_to_ditte_presenze",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"D76036B2-C798-4D3B-B1C3-A05300EED0B0"

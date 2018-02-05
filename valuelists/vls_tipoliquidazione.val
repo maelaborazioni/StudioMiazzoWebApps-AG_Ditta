@@ -1,0 +1,11 @@
+addEmptyValue:1,
+customValues:"solo residuo anno precedente|1
+maturato sino al|0",
+dataSource:null,
+name:"vls_tipoliquidazione",
+relationName:null,
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"F6C6934F-2A14-4A87-A6B5-162B14F01C31",
+valueListType:0

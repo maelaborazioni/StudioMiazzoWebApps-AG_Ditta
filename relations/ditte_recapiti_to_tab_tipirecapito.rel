@@ -1,0 +1,8 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_tipirecapito",
+items:[
+{foreignColumnName:"codice",primaryDataProviderID:"codtiporecapito",typeid:23,uuid:"6BED2417-75A3-4AA2-A3EA-0B83A7FE6BD5"}
+],
+name:"ditte_recapiti_to_tab_tipirecapito",
+primaryDataSource:"db:/ma_anagrafiche/ditte_recapiti",
+typeid:22,
+uuid:"7EF69E50-BFAC-4BE4-AE5F-A111015694B2"

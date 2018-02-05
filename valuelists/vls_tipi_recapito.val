@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"codice",
+dataProviderID2:"descrizione",
+dataSource:"db:/ma_anagrafiche/tab_tipirecapito",
+name:"vls_tipi_recapito",
+returnDataProviders:1,
+showDataProviders:2,
+typeid:34,
+uuid:"71CAF5CF-0EF0-4D84-9FC2-486A0D2769DB",
+valueListType:1

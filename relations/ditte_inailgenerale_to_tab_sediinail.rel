@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_sediinail",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"codsedeinail",typeid:23,uuid:"76FA0F35-0049-41AF-A487-1428081E16FB"}
+],
+joinType:0,
+name:"ditte_inailgenerale_to_tab_sediinail",
+primaryDataSource:"db:/ma_anagrafiche/ditte_inailgenerale",
+typeid:22,
+uuid:"368A9B8F-1E45-45C3-A4A8-9FDA5DC40A91"

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_centriimpiego",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"coduffcentroimpiego",typeid:23,uuid:"A69544D5-5AD3-4BF0-9A8A-984EE7DB3FF9"}
+],
+joinType:0,
+name:"ditte_sedicollocamento_to_tab_centriimpiego",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedicollocamento",
+typeid:22,
+uuid:"8C8A4D29-EC05-4F04-9433-B81BFA91337F"

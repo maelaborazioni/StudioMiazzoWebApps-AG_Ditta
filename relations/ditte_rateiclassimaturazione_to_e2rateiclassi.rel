@@ -1,0 +1,10 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2rateiclassi",
+items:[
+{foreignColumnName:"classerateo",primaryDataProviderID:"classerateo",typeid:23,uuid:"BE66840E-F499-47C5-AB25-234353929FF6"}
+],
+joinType:1,
+name:"ditte_rateiclassimaturazione_to_e2rateiclassi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_rateiclassimaturazione",
+typeid:22,
+uuid:"B68A7A76-5079-4A37-8323-4E6682F9B24D"

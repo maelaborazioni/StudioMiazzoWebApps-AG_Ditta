@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/ditte",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"E1459891-F7FF-41B1-8F5C-5041EE2A366F"}
+],
+joinType:1,
+name:"ditte_calendario_to_ditte",
+primaryDataSource:"db:/ma_anagrafiche/ditte_calendario",
+typeid:22,
+uuid:"3A3AD20F-99A6-414B-AC01-90F1F8F5C209"

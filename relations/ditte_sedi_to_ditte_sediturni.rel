@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_sediturni",
+initialSort:null,
+items:[
+{foreignColumnName:"iddittasede",operator:0,primaryDataProviderID:"iddittasede",typeid:23,uuid:"EB3FDA9C-F031-4B29-9D51-8A16E8B70F2A"}
+],
+joinType:0,
+name:"ditte_sedi_to_ditte_sediturni",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedi",
+typeid:22,
+uuid:"865F40D4-C386-4228-8F59-AFBB1F1A24E3"

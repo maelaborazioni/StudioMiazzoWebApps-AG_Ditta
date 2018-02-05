@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_sw",
+items:[
+{foreignColumnName:"idtabsw",primaryDataProviderID:"idtabsw",typeid:23,uuid:"0E346644-0883-434B-8757-0C57D51132F5"}
+],
+joinType:1,
+name:"ditte_presenzesw_to_tab_sw",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenzesw",
+typeid:22,
+uuid:"652A2BAC-29A2-48DC-A237-D0806D9706F7"

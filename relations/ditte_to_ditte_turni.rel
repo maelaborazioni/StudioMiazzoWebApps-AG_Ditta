@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+allowParentDeleteWhenHavingRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_turni",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"D1F89086-9995-4DA3-B70F-9C1124AC4E49"}
+],
+joinType:0,
+name:"ditte_to_ditte_turni",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"1757D9C3-EE4C-410B-8624-4F04A221383F"

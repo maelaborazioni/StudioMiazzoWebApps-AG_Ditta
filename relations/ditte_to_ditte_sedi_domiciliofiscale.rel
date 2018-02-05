@@ -1,0 +1,12 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_sedi",
+items:[
+{foreignColumnName:"codtiposede",operator:0,primaryDataProviderID:"globals.codDOMICILIOFISCALE",typeid:23,uuid:"5A39B322-6B08-4D57-A811-D84F7A2E8E6A"},
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"FBF2769A-37F9-499B-9D95-5FBDE89C0CC1"}
+],
+joinType:0,
+name:"ditte_to_ditte_sedi_domiciliofiscale",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"64491B34-0543-4901-A54E-2F7CA42770E9"

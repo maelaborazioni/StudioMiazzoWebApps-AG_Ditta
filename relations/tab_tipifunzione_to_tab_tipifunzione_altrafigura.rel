@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_tipifunzione",
+items:[
+{foreignColumnName:"idtipofunzione",operator:0,primaryDataProviderID:"abilitatoaltrafigura",typeid:23,uuid:"8778D789-373D-425D-A963-319888BB23F1"}
+],
+joinType:0,
+name:"tab_tipifunzione_to_tab_tipifunzione_altrafigura",
+primaryDataSource:"db:/ma_anagrafiche/tab_tipifunzione",
+typeid:22,
+uuid:"A746D15B-D6B7-47DD-91CC-9D0122A727D4"

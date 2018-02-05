@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"15C12157-FD46-4131-8377-9F88769F06BB"}
+],
+joinType:0,
+name:"ditte_turni_to_ditte",
+primaryDataSource:"db:/ma_anagrafiche/ditte_turni",
+typeid:22,
+uuid:"131975C4-2CF8-4906-B382-BDAFCD73343B"

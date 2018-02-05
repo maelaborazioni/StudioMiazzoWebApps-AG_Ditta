@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_rateiclassimaturazione",
+items:[
+{foreignColumnName:"iddittarateo",operator:0,primaryDataProviderID:"iddittarateo",typeid:23,uuid:"6DD5BF32-C179-45AA-A7BD-E87187C6CCDC"}
+],
+joinType:0,
+name:"ditte_ratei_to_ditte_rateiclassimaturazione",
+primaryDataSource:"db:/ma_anagrafiche/ditte_ratei",
+typeid:22,
+uuid:"136A0B16-E63B-4767-83A4-E17A6727B063"

@@ -1,0 +1,14 @@
+dataSource:"db:/ma_presenze/e2tabtipofestivita",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"3120469A-658B-404C-8682-9FB7A34771BA"
+}
+],
+name:"agd_pres_af_tipo_festivita",
+styleName:"leaf_style",
+typeid:3,
+uuid:"A6620E88-811E-4278-9C53-95897AC846F8"

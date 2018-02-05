@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_pianificazione",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"089E90F7-8F69-43A4-8426-DD7B6C98C0ED"}
+],
+joinType:0,
+name:"ditte_to_ditte_pianificazione",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"80BEF7F7-8D86-4526-8E83-DC81AAB3942E"

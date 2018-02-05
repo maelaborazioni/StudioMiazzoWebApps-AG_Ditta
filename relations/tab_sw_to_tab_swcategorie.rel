@@ -1,0 +1,10 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_swcategorie",
+items:[
+{foreignColumnName:"codice",primaryDataProviderID:"codcategoriasw",typeid:23,uuid:"6B6D24E2-3F63-4D46-9627-7256D1B83410"}
+],
+joinType:1,
+name:"tab_sw_to_tab_swcategorie",
+primaryDataSource:"db:/ma_anagrafiche/tab_sw",
+typeid:22,
+uuid:"9C97CE84-85C1-4C2E-9CE0-A55F89DCB5DA"

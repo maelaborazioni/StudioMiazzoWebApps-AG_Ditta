@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/tab_comuniitalia",
+items:[
+{foreignColumnName:"codcomune",operator:0,primaryDataProviderID:"codcomune",typeid:23,uuid:"03FFF334-02EC-4228-9013-5A73AA6A9E7D"}
+],
+joinType:0,
+name:"tab_sediinps_to_tab_comuniitalia",
+primaryDataSource:"db:/ma_anagrafiche/tab_sediinps",
+typeid:22,
+uuid:"8913728E-FD6B-4604-8F73-3614AE64DB08"

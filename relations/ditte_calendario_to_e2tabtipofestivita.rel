@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_presenze/e2tabtipofestivita",
+items:[
+{foreignColumnName:"idtabtipofestivita",operator:0,primaryDataProviderID:"idtabtipofestivita",typeid:23,uuid:"B1CCB451-7C32-4D6D-AEA6-5796708B0CF0"}
+],
+joinType:0,
+name:"ditte_calendario_to_e2tabtipofestivita",
+primaryDataSource:"db:/ma_anagrafiche/ditte_calendario",
+typeid:22,
+uuid:"0B36CC10-80AC-4931-8E10-8A5722644397"

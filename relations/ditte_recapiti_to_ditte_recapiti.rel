@@ -1,0 +1,7 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_recapiti",
+joinType:1,
+name:"ditte_recapiti_to_ditte_recapiti",
+primaryDataSource:"db:/ma_anagrafiche/ditte_recapiti",
+typeid:22,
+uuid:"2E706855-60A4-4069-9071-D4D7E6B50119"

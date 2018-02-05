@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_recapiti",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"50410A2A-9BE2-446B-9EBB-D88A48182641"}
+],
+joinType:0,
+name:"ditte_to_ditte_recapiti",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"41B1C0AD-37C0-4BAD-B02E-4A84FD9C9B8C"

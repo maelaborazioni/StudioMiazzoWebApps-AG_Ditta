@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+items:[
+{foreignColumnName:"iddittaindirizzo",primaryDataProviderID:"iddittaindirizzo",typeid:23,uuid:"A9A91214-091E-4CA2-ABC7-4F6EADAD4858"}
+],
+name:"ditte_sedi_to_ditte_indirizzi",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedi",
+typeid:22,
+uuid:"73DC1C97-2B47-4E75-A0C6-627E498817FE"

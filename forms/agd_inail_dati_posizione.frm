@@ -1,0 +1,15 @@
+dataSource:"db:/ma_anagrafiche/ditte_inailposizioni",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"C4A13C61-EF16-45F9-8CCB-10E3255B0DEE"
+}
+],
+name:"agd_inail_dati_posizione",
+size:"400,480",
+styleName:"leaf_style",
+typeid:3,
+uuid:"D607BE5C-721C-453B-8029-E8D7067FE58A"

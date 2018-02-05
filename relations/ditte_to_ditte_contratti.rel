@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_contratti",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"318FF260-01C1-4DC1-A8A0-C0C72BAF4099"}
+],
+joinType:1,
+name:"ditte_to_ditte_contratti",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"B40AEF1E-EBEA-42AF-A3CB-EFEEDBBD97AE"

@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+items:[
+{foreignColumnName:"codtipoindirizzo",primaryDataProviderID:"scopes.globals.codSEDELEGALE",typeid:23,uuid:"2E1772C5-34BD-469F-B75B-CA1889798C3C"},
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"DF5393C8-6A1A-42F8-B4FD-843A296CBB3B"}
+],
+name:"ditte_to_ditte_indirizzi_sede_legale",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"E338BE07-B405-4AEC-842E-BC98E868EE06"

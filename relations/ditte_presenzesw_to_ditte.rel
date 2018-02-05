@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/ditte",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"9B613558-6060-472A-A6C9-7619CD63A00B"}
+],
+joinType:1,
+name:"ditte_presenzesw_to_ditte",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenzesw",
+typeid:22,
+uuid:"B1CF18F6-6B2E-4268-B078-3D0B8578B476"

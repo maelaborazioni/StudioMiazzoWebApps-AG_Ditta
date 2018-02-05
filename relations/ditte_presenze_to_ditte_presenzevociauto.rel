@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenzevociauto",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"8AAB602C-2138-4FA8-9DD8-0962C690295D"}
+],
+joinType:1,
+name:"ditte_presenze_to_ditte_presenzevociauto",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenze",
+typeid:22,
+uuid:"F74C7676-4964-4F54-930E-2DD277D6D792"

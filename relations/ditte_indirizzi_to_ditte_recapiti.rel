@@ -1,0 +1,13 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_recapiti",
+items:[
+{foreignColumnName:"codtipoindirizzo",primaryDataProviderID:"codtipoindirizzo",typeid:23,uuid:"08ED0C0C-1090-4E63-AB42-060E7F371585"},
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"3C7F03F4-2728-4B70-BFE8-9BF9FCCF0A15"},
+{foreignColumnName:"datarilevazioneindirizzo",primaryDataProviderID:"datarilevazione",typeid:23,uuid:"3E06A3CA-6102-4F4E-BBD3-011AD4269A07"}
+],
+joinType:1,
+name:"ditte_indirizzi_to_ditte_recapiti",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+typeid:22,
+uuid:"CF9E2D26-E42E-487C-A87B-996AC75FD5CF"

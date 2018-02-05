@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_presenzegruppigestione",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"E409A55E-692C-40C1-A113-81F0CCEE176C"}
+],
+joinType:1,
+name:"ditte_presenze_to_ditte_presenzegruppigestione",
+primaryDataSource:"db:/ma_anagrafiche/ditte_presenze",
+typeid:22,
+uuid:"B6B04032-FBE1-4B9F-9163-BC7728294F0C"

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_hr/tabsictabelle",
+items:[
+{foreignColumnName:"idsic_tipotabella",operator:0,primaryDataProviderID:"idsic_tabincendio",typeid:23,uuid:"78E57635-FD47-4A2C-82CB-BD319B36EC3A"}
+],
+joinType:0,
+name:"sicurezza_datigenerali_to_tabsictabelle_incendio",
+primaryDataSource:"db:/ma_hr/sicurezza_datigenerali",
+typeid:22,
+uuid:"5BCA9099-2AE0-45F9-BF9C-4915477F87D4"

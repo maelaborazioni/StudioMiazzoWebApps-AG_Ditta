@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte",
+items:[
+{foreignColumnName:"idditta",operator:0,primaryDataProviderID:"idditta",typeid:23,uuid:"2BFDA68B-F625-48EF-B801-062EFD973D22"}
+],
+joinType:0,
+name:"sicurezza_datigenerali_to_ditte",
+primaryDataSource:"db:/ma_hr/sicurezza_datigenerali",
+typeid:22,
+uuid:"A3481E12-D6DC-4406-9E1D-989C75E7550F"

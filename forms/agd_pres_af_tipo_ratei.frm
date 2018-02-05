@@ -1,0 +1,14 @@
+dataSource:"db:/ma_anagrafiche/ditte_ratei",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"4CAC0ECA-B344-466D-9649-23031A2F32D7"
+}
+],
+name:"agd_pres_af_tipo_ratei",
+styleName:"leaf_style",
+typeid:3,
+uuid:"9A7162EB-FBF9-4550-8C35-D6A0A56B5FAD"

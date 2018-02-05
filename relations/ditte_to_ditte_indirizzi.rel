@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizzi",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"062E812D-BF3A-48FD-90E4-9969515AA865"}
+],
+name:"ditte_to_ditte_indirizzi",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"13FC9485-7790-44B1-AA50-55386273AC93"

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_common/tab_entitipologie",
+items:[
+{foreignColumnName:"idtabentetipologia",operator:0,primaryDataProviderID:"idtabentetipologia",typeid:23,uuid:"FC66B01D-FAE5-4DD0-8D77-802E461BEB6D"}
+],
+joinType:1,
+name:"tab_enticategorie_to_tab_entitipologie",
+primaryDataSource:"db:/ma_common/tab_enticategorie",
+typeid:22,
+uuid:"A7EAD5D2-5C6D-4E9D-A364-1F69DF55F9E5"

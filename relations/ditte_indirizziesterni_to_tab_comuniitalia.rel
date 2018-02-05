@@ -1,0 +1,9 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_comuniitalia",
+items:[
+{foreignColumnName:"codcomune",primaryDataProviderID:"codcomune",typeid:23,uuid:"8CF33B29-FB94-4286-AA98-FAAA9A9B19D1"}
+],
+joinType:1,
+name:"ditte_indirizziesterni_to_tab_comuniitalia",
+primaryDataSource:"db:/ma_anagrafiche/ditte_indirizziesterni",
+typeid:22,
+uuid:"FEC976EB-EC50-477C-97E4-3457D2E5D3D3"

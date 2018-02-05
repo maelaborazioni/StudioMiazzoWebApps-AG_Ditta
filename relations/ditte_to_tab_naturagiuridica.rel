@@ -1,0 +1,8 @@
+foreignDataSource:"db:/ma_anagrafiche/tab_naturagiuridica",
+items:[
+{foreignColumnName:"codice",operator:0,primaryDataProviderID:"codnaturagiuridica",typeid:23,uuid:"AFACB8D7-E6DF-45A6-ACAE-1A42C773F890"}
+],
+name:"ditte_to_tab_naturagiuridica",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"16168EBF-8660-45FD-96B9-1C10CC258F93"

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_sedigruppiinst",
+items:[
+{foreignColumnName:"iddittasede",operator:0,primaryDataProviderID:"iddittasede",typeid:23,uuid:"76EF9177-047E-4D6D-B5B9-96E33EAA01FD"}
+],
+joinType:1,
+name:"ditte_sedi_to_ditte_sedigruppiinst",
+primaryDataSource:"db:/ma_anagrafiche/ditte_sedi",
+typeid:22,
+uuid:"CABD2D65-6C8E-4E11-8B7F-BCEC3B3702CB"

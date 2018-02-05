@@ -1,0 +1,14 @@
+dataSource:"db:/ma_anagrafiche/ditte_inps",
+extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"0A71B6A1-ECBA-4A96-99BA-473B147E7A78"
+}
+],
+name:"agd_inps",
+styleName:"leaf_style",
+typeid:3,
+uuid:"C9B0DFB4-BDFB-4218-9232-DEC62B8874A9"

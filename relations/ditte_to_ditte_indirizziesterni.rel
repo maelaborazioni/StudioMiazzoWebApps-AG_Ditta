@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/ma_anagrafiche/ditte_indirizziesterni",
+items:[
+{foreignColumnName:"idditta",primaryDataProviderID:"idditta",typeid:23,uuid:"E0F0AF7B-D754-48FB-A9C3-7F8684A21C03"}
+],
+joinType:1,
+name:"ditte_to_ditte_indirizziesterni",
+primaryDataSource:"db:/ma_anagrafiche/ditte",
+typeid:22,
+uuid:"10FEDEDE-25A6-4B6B-B9CC-33D307E284EF"

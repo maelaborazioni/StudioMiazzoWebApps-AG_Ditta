@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:false,
+foreignDataSource:"db:/ma_anagrafiche/ditte_rateiscadenziario",
+items:[
+{foreignColumnName:"iddittarateo",operator:0,primaryDataProviderID:"iddittarateo",typeid:23,uuid:"B22333EF-52C0-4337-98C3-C2E7A667B7CB"}
+],
+joinType:0,
+name:"ditte_ratei_to_ditte_rateiscadenziario",
+primaryDataSource:"db:/ma_anagrafiche/ditte_ratei",
+typeid:22,
+uuid:"10BF958B-C51A-48DB-BF33-8710A9A21B08"
