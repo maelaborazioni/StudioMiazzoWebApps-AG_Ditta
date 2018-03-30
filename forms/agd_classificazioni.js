@@ -3,7 +3,7 @@
  */
 function getButtonObject()
 {
-	var _enabled = globals.ma_utl_hasKey(globals.Key.GEST_ANAG_DITTA);
+	var _enabled = true;//globals.ma_utl_hasKey(globals.Key.GEST_ANAG_DITTA);
 	
 	var btnObj = _super.getButtonObject();
 	

@@ -3,7 +3,8 @@
  */
 function getButtonObject()
 {
-	var _enabled = globals.ma_utl_hasKey(globals.Key.GEST_ANAG_DITTA);
+	var _enabled = globals.getTipologiaDitta(idditta) == globals.Tipologia.ESTERNA
+				   || globals.ma_utl_hasKey(globals.Key.GEST_ANAG_DITTA);
 	var btnObj = _super.getButtonObject();
 	
 		btnObj.btn_new = { visible: _enabled, enabled: _enabled };

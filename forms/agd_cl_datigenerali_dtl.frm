@@ -12,9 +12,11 @@ uuid:"23B438CA-67D2-4981-84C5-662B87B76623"
 },
 {
 dataProviderID:"codice",
+format:"###",
 horizontalAlignment:0,
 location:"5,25",
 name:"fld_codice",
+onDataChangeMethodID:"64D9280C-6D70-442F-B7F4-43E12590CADC",
 size:"50,20",
 typeid:4,
 uuid:"6705308E-C7D0-4DC0-994C-27A98D02CD9E"

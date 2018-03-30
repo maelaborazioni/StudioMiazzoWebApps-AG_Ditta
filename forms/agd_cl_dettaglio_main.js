@@ -1,4 +1,23 @@
 /**
+ * @properties={typeid:24,uuid:"EAFFB65F-93B5-410F-963D-E481ED995397"}
+ */
+function getButtonObject()
+{
+	var btnObj = _super.getButtonObject();
+	
+	// TODO ticket 13106 : setting enable to true...
+	var enabled = globals.ma_utl_hasKey(globals.Key.GEST_ANAG_DITTA) 
+	              || globals.getTipologiaDitta(idditta) ==  globals.Tipologia.ESTERNA ? true : false;
+
+	btnObj.btn_new = { enabled : enabled };
+	btnObj.btn_edit = { enabled : enabled };
+	btnObj.btn_delete = { enabled : enabled };
+	btnObj.btn_duplicate = { enabled : false };
+	
+	return btnObj;
+}
+
+/**
  *
  * @param {JSEvent} _event
  * @param {String} _triggerForm
@@ -9,6 +28,17 @@
  */
 function dc_delete(_event, _triggerForm, _forceForm, _noConfirm) 
 {
+	if(foundset.getSize() == 0)
+	{
+		globals.ma_utl_showWarningDialog('Nessuna dettaglio di classificazione da eliminare','Modifica il dettaglio della classificazione');
+		return;
+	}
+	else if(foundset.codice && parseInt(foundset.codice) <= 10)
+	{
+		globals.ma_utl_showWarningDialog('Non è possibile modificare una classificazione avente codice (da 1 a 10) riservato allo Studio','Modifica la classificazione');
+		return;
+	}
+	
 	ditte_classificazioni_to_ditte_classificazionidettaglio.deleteRecord();
 }
 
@@ -22,6 +52,17 @@ function dc_delete(_event, _triggerForm, _forceForm, _noConfirm)
 */
 function dc_edit(_event, _triggerForm, _forceForm) 
 {
+	if(foundset.getSize() == 0)
+	{
+		globals.ma_utl_showWarningDialog('Nessun dettaglio di classificazione da eliminare','Modifica il dettaglio della classificazione');
+		return;
+	}
+	else if(foundset.codice && parseInt(foundset.codice) <= 10)
+	{
+		globals.ma_utl_showWarningDialog('Non è possibile modificare il dettaglio di una classificazione avente codice (da 1 a 10) riservato allo Studio','Modifica la classificazione');
+		return;
+	}
+	
 	var frm = forms.agd_cl_dettaglio_dtl;
 	frm._isInEdit = true;
 	frm._idDittaClassificazioneDettaglio = forms.agd_cl_dettaglio_tbl.iddittaclassificazionedettaglio;
@@ -38,6 +79,11 @@ function dc_edit(_event, _triggerForm, _forceForm)
 */
 function dc_new(_event, _triggerForm, _forceForm) 
 {
+	if(foundset.codice && parseInt(foundset.codice) <= 10)
+	{
+		globals.ma_utl_showWarningDialog('Non è possibile modificare una classificazione avente codice (da 1 a 10) riservato allo Studio','Modifica la classificazione');
+		return;
+	}
 	var frm = forms.agd_cl_dettaglio_dtl;
 	frm._isInEdit = false;
 	globals.ma_utl_showFormInDialog(frm.controller.getName(),'Inserisci una nuovo dettaglio di classificazione');

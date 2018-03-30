@@ -1291,7 +1291,7 @@ function filtraDittaPerRegoleOrarie(_fs)
 		_fs.tipologia = 0;
 		_fs.newRecord();
 		_fs.tipologia = 1;
-		_fs.ditte_to_ditte_legami.tipoesterni = 0;
+		_fs.ditte_to_ditte_legami.tipoesterni = 1;
 		_fs.search();
 	}
 	

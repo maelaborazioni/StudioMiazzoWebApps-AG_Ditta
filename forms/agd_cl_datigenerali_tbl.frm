@@ -13,6 +13,7 @@ uuid:"7C42D00F-A859-492D-9821-0EBEE1A4B0BB"
 },
 {
 dataProviderID:"codice",
+editable:false,
 horizontalAlignment:0,
 location:"0,20",
 name:"fld_codice",
@@ -24,6 +25,7 @@ uuid:"81DD98B0-9D2E-4F34-863C-B982BEB5892D"
 },
 {
 dataProviderID:"descrizione",
+editable:false,
 location:"60,20",
 name:"fld_descrizione",
 size:"240,20",
@@ -40,6 +42,7 @@ uuid:"A38F33BC-EC03-47C7-9BD5-6CDBC964F454"
 },
 {
 dataProviderID:"descrizionesostitutiva",
+editable:false,
 location:"310,20",
 name:"fld_descrizionesostitutiva",
 size:"240,20",

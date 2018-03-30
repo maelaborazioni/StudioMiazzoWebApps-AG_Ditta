@@ -1,6 +1,6 @@
 addEmptyValue:1,
-customValues:"Esterna | 0\r\
-Interinale | 1",
+customValues:"Interinale | 0\r\
+Esterna | 1",
 name:"vls_tipo_legame_ditta_esterna",
 typeid:34,
 uuid:"D0C717DF-0826-4510-BB85-72B278BC9C7D"

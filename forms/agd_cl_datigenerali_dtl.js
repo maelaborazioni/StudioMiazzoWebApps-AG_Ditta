@@ -18,7 +18,7 @@ var _idDittaClassificazione = null;
  * @properties={typeid:24,uuid:"D900D7CB-32BA-4CC4-B018-7E77213347A9"}
  */
 function confermaClassificazione(event) 
-{
+{	
 	databaseManager.startTransaction();
 	
 	foundset.idditta = forms.agd_header_dtl.idditta;
@@ -86,4 +86,27 @@ function onShowForm(firstShow, event, svyNavBaseOnShow)
 function onHide(event) 
 {
 	return annullaClassificazione(event);
+}
+
+/**
+ * Handle changed data, return false if the value should not be accepted. In NGClient you can return also a (i18n) string, instead of false, which will be shown as a tooltip.
+ *
+ * @param {String} oldValue old value
+ * @param {String} newValue new value
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @return {Boolean}
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"64D9280C-6D70-442F-B7F4-43E12590CADC"}
+ */
+function onDataChangeCodiceClassificazioneDitta(oldValue, newValue, event)
+{
+	if(newValue && parseInt(newValue) <= 10)
+	{
+		globals.ma_utl_showWarningDialog('I codici da 1 a 10 sono riservati allo Studio','Classificazioni ditta');
+		return false;
+	}
+	return true;
 }

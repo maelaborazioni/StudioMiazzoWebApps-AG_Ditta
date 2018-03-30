@@ -78,7 +78,7 @@ function process_save_ditta_esterna(event)
 		// relativi al legame con una ditta standard ed alla gestione delle ore
 		if (newDitta.tipologia == globals.Tipologia.ESTERNA) {
 			// crea il record in ditte_legami per le ditte esterne di tipo interinale
-			if (_tipoEsterni == 1) {
+			if (_tipoEsterni == 0) {
 				/** @type {JSRecord<db:/ma_anagrafiche/ditte_legami>} */
 				var newDittaLegame = newDitta.ditte_to_ditte_legami.getRecord(newDitta.ditte_to_ditte_legami.newRecord());
 				if (!newDittaLegame)
