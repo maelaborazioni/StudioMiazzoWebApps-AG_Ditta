@@ -186,7 +186,7 @@ function selezione_CL_Esterna()
 		
 	else 
 		globals.svy_nav_showLookupWindow(new JSEvent, "currDitta", lkpDITTA,
-            'ApriCL_Esterna', 'filtraDittaEsterna', null, null, '', true);
+            'ApriCL_Esterna', 'filtraDittaEsterne', null, null, '', true);
 }
 
 /**
@@ -1833,4 +1833,41 @@ function validaDittaTurno(record) {
 
 	// return boolean to indicate success
 	return true;
+}
+
+/**
+ * @AllowToRunInFind
+ *
+ * @properties={typeid:24,uuid:"B2273873-9FF6-4C0F-A66A-76465BD9471A"}
+ */
+function updateDatiGeneraliEsterni()
+{
+	var frm = forms.agd_cl_datigenerali_esterni_tbl;
+	var fs = frm.foundset;
+	var _idDitta = forms.agd_header_esterni_dtl.idditta;
+	var _idDittaRif = globals.getDittaRiferimento(_idDitta);
+	if(fs.find())
+	{
+		fs.idditta = [_idDitta,_idDittaRif];
+		fs.search();
+	}
+}
+
+/**
+ * @AllowToRunInFind
+ *
+ * @properties={typeid:24,uuid:"51A072DD-59FD-499A-A3BB-A2164C7E1417"}
+ */
+function getDitteGestiteEpi2()
+{
+	/** @type {JSFoundset<db:/ma_anagrafiche/ditte>} */
+	var fsDitte = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);
+    if(fsDitte.find())
+    {
+    	fsDitte.ditte_to_ditte_presenze.ore_gestioneepi2 = 1;
+    	if(fsDitte.search())
+    		return globals.foundsetToArray(fsDitte,'idditta');
+    }
+    
+    return [];
 }
