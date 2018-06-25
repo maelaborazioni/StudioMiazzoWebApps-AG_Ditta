@@ -1,4 +1,4 @@
-dataSource:"db:/ma_anagrafiche/ditte_classificazioni",
+dataSource:"db:/ma_anagrafiche/ditte",
 extendsID:"177C43BC-DE05-4E83-8ABD-C5CCA7ACEA84",
 items:[
 {
@@ -15,7 +15,7 @@ items:[
 containsFormID:"8A7C2DF0-CBC2-4E7F-90B1-ADE0FE317936",
 location:"0,202",
 name:"dettagli_tab",
-relationName:"ditte_classificazioni_to_ditte_classificazionidettaglio",
+relationName:"ditte_to_ditte_classificazioni.ditte_classificazioni_to_ditte_classificazionidettaglio",
 text:"agd_cl_dettaglio_tbl",
 typeid:15,
 uuid:"4C596F17-CBCC-4367-AEBB-38DE93A2CD98"
@@ -24,6 +24,7 @@ uuid:"4C596F17-CBCC-4367-AEBB-38DE93A2CD98"
 location:"0,172",
 name:"dettagli_tabless",
 printable:false,
+scrollTabs:true,
 size:"800,132",
 tabOrientation:-1,
 transparent:true,
@@ -45,6 +46,12 @@ height:480,
 partType:5,
 typeid:19,
 uuid:"5E8E16C1-58B5-4F5C-B4C2-AE9664B1246B"
+},
+{
+extendsID:"B6013FC2-C33D-4FD5-AEE0-8F8D0E950A7D",
+scrollTabs:true,
+typeid:16,
+uuid:"89D852BB-4602-4E2F-BCD6-7A43D912415E"
 },
 {
 formIndex:52,

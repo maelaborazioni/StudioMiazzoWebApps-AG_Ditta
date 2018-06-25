@@ -1,10 +1,15 @@
 /**
- * @properties={typeid:35,uuid:"21DDD5D2-C70B-429C-8BD4-41CAD279A04D",variableType:-4}
+ * @properties={typeid:35,uuid:"CEFC0A3C-1D03-4F39-9432-26BD3162F920",variableType:-4}
  */
 var _isInEdit = false;
 
 /**
- * @properties={typeid:35,uuid:"D46C8988-DBAC-4556-A30D-78D4E0ABBE9F",variableType:-4}
+ * @properties={typeid:35,uuid:"7D09A600-C8C3-4900-AE09-FF8ACB277D48",variableType:-4}
+ */
+var _idDitta = null;
+
+/**
+ * @properties={typeid:35,uuid:"9AB66A76-DE47-4C39-9ABD-52B519803B2F",variableType:-4}
  */
 var _idDittaClassificazione = null;
 
@@ -15,13 +20,13 @@ var _idDittaClassificazione = null;
  *
  * @private
  *
- * @properties={typeid:24,uuid:"D900D7CB-32BA-4CC4-B018-7E77213347A9"}
+ * @properties={typeid:24,uuid:"62E4C383-E8FC-44A6-979D-1713CF62424A"}
  */
 function confermaClassificazione(event) 
 {	
 	databaseManager.startTransaction();
 	
-	foundset.idditta = forms.agd_header_dtl.idditta;
+	foundset.idditta = _idDitta;
 	foundset.manuale = 1;
 	
 	if(!databaseManager.commitTransaction())
@@ -36,9 +41,12 @@ function confermaClassificazione(event)
 		globals.ma_utl_showErrorDialog('Inserimento classificazione non riuscito');
 	    return;
 	}
-	
+		
 	globals.ma_utl_setStatus(globals.Status.BROWSE,controller.getName());
 	globals.svy_mod_closeForm(event);
+	var selTabName = forms.svy_nav_fr_openTabs.vTabObjects[forms.svy_nav_fr_openTabs.vTabNames[forms.svy_nav_fr_openTabs.vSelectedTab]];
+    if(selTabName && selTabName.program == 'AGD_Classificazioni_Esterna')
+       globals.updateDatiGeneraliEsterni();
 }
 
 /**
@@ -48,13 +56,16 @@ function confermaClassificazione(event)
  *
  * @private
  *
- * @properties={typeid:24,uuid:"936DE41B-DA75-46D9-A1A6-C5D2FED43CB2"}
+ * @properties={typeid:24,uuid:"629B6501-75B4-4013-B02B-76D61DA36641"}
  */
 function annullaClassificazione(event) 
 {
-	databaseManager.rollbackTransaction();
+	databaseManager.revertEditedRecords();
 	globals.ma_utl_setStatus(globals.Status.BROWSE,controller.getName());
 	globals.svy_mod_closeForm(event);
+	var selTabName = forms.svy_nav_fr_openTabs.vTabObjects[forms.svy_nav_fr_openTabs.vTabNames[forms.svy_nav_fr_openTabs.vSelectedTab]];
+    if(selTabName && selTabName.program == 'AGD_Classificazioni_Esterna')
+       globals.updateDatiGeneraliEsterni();
 }
 
 /**
@@ -63,25 +74,28 @@ function annullaClassificazione(event)
 * @param {JSEvent} event
 * @param {Boolean} svyNavBaseOnShow
 *
-* @properties={typeid:24,uuid:"028AA018-BF62-4437-AF0F-D719B7A0979E"}
+* @properties={typeid:24,uuid:"9C2BB29B-15E8-432C-9401-924E1B14B979"}
 */
 function onShowForm(firstShow, event, svyNavBaseOnShow)
 {
 	_super.onShowForm(firstShow, event, svyNavBaseOnShow);
+	
+	databaseManager.setAutoSave(false);
+	databaseManager.revertEditedRecords();
+		
 	globals.ma_utl_setStatus(globals.Status.EDIT,controller.getName());
 
 	if(_isInEdit)
 		foundset.loadRecords(_idDittaClassificazione);
 	else
 	    foundset.getRecord(foundset.newRecord());
-		
 }
 
 /**
 *
 * @param {JSEvent} event
 *
-* @properties={typeid:24,uuid:"88068769-0A58-4C62-9E80-4EE5BB77E356"}
+* @properties={typeid:24,uuid:"ADB1F7B3-25FD-4EF6-84C6-ACDEEAD678AF"}
 */
 function onHide(event) 
 {
@@ -99,14 +113,16 @@ function onHide(event)
  *
  * @private
  *
- * @properties={typeid:24,uuid:"64D9280C-6D70-442F-B7F4-43E12590CADC"}
+ * @properties={typeid:24,uuid:"B4A7F686-6EC7-4B3B-9566-B590D8E44974"}
  */
 function onDataChangeCodiceClassificazioneDitta(oldValue, newValue, event)
 {
 	if(newValue && parseInt(newValue) <= 10)
 	{
-		globals.ma_utl_showWarningDialog('I codici da 1 a 10 sono riservati allo Studio','Classificazioni ditta');
+		setStatusWarning('I codici da 1 a 10 sono riservati allo Studio','Classificazioni ditta',1000);
 		return false;
 	}
+	
+	setStatusNeutral();
 	return true;
 }

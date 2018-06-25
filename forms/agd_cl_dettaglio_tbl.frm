@@ -3,6 +3,7 @@ extendsID:"3C076162-6D45-4034-9F27-2ADA00E4841B",
 items:[
 {
 dataProviderID:"codice",
+editable:false,
 horizontalAlignment:0,
 location:"0,20",
 name:"fld_codice",
@@ -20,6 +21,7 @@ uuid:"7904ED2F-05A4-4228-8B53-9F5A807D7634"
 },
 {
 dataProviderID:"descrizione",
+editable:false,
 location:"50,20",
 name:"fld_descrizione",
 size:"240,20",
@@ -52,6 +54,7 @@ uuid:"A24DC727-278E-4115-BE77-B4A046D79502"
 }
 ],
 name:"agd_cl_dettaglio_tbl",
+scrollbars:0,
 size:"627,40",
 styleName:"leaf_style",
 typeid:3,

@@ -1,6 +1,13 @@
-customProperties:"formComponent:false",
+customProperties:"formComponent:false,\
+methods:{\
+onRecordSelectionMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 dataSource:"db:/ma_anagrafiche/ditte",
 extendsID:"36980DFB-61DC-4925-972A-6783D3E1D25E",
 name:"agd_header_esterni_dtl",
+onRecordSelectionMethodID:"D6B3D811-1CB5-4BF7-8A45-F0C3ECF92149",
 typeid:3,
 uuid:"15C328C5-7599-497E-857F-C18D60E4B750"

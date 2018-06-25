@@ -1,10 +1,10 @@
 /**
- * @properties={typeid:35,uuid:"6BC544F0-2C7D-401D-A14F-22B8B72B4BDA",variableType:-4}
+ * @properties={typeid:35,uuid:"460DBE29-8D8D-448F-A2E0-33EA6F44CA9C",variableType:-4}
  */
 var _isInEdit = false;
 
 /**
- * @properties={typeid:35,uuid:"AE498863-000B-47C2-A50A-19017785319C",variableType:-4}
+ * @properties={typeid:35,uuid:"A68B87E9-BA6D-45C9-98F3-5435A19E4119",variableType:-4}
  */
 var _idDittaClassificazioneDettaglio = null;
 
@@ -15,11 +15,11 @@ var _idDittaClassificazioneDettaglio = null;
  *
  * @private
  *
- * @properties={typeid:24,uuid:"2D62CDDA-5436-48CC-9B8C-8B4820E59754"}
+ * @properties={typeid:24,uuid:"5E5E2009-B908-467A-B226-D53710760760"}
  */
 function confermaClassificazioneDettaglio(event) 
-{
-    databaseManager.startTransaction();
+{	
+	databaseManager.startTransaction();	
 	
 	foundset.iddittaclassificazione = forms.agd_cl_datigenerali_tbl.iddittaclassificazione;
 	foundset.manuale = 1;
@@ -48,11 +48,11 @@ function confermaClassificazioneDettaglio(event)
  *
  * @private
  *
- * @properties={typeid:24,uuid:"C7413000-0202-436B-ABDB-B35A863B96EA"}
+ * @properties={typeid:24,uuid:"6C4039ED-C8B1-4617-AEBA-44A5E09F5F03"}
  */
 function annullaClassificazioneDettaglio(event) 
 {
-	databaseManager.rollbackTransaction();
+	databaseManager.revertEditedRecords();
 	globals.ma_utl_setStatus(globals.Status.BROWSE,controller.getName());
 	globals.svy_mod_closeForm(event);
 }
@@ -63,13 +63,17 @@ function annullaClassificazioneDettaglio(event)
 * @param {JSEvent} event
 * @param {Boolean} svyNavBaseOnShow
 *
-* @properties={typeid:24,uuid:"E6206AF8-562B-4A51-AA9E-2C35EE657F3F"}
+* @properties={typeid:24,uuid:"262D5788-5EDC-4881-9B30-69CBF8A97572"}
 */
 function onShowForm(firstShow, event, svyNavBaseOnShow)
 {
 	_super.onShowForm(firstShow, event, svyNavBaseOnShow);
-	globals.ma_utl_setStatus(globals.Status.EDIT,controller.getName());
 
+	databaseManager.setAutoSave(false);
+	databaseManager.revertEditedRecords();
+		
+	globals.ma_utl_setStatus(globals.Status.EDIT,controller.getName());
+ 	
 	if(_isInEdit)
 		foundset.loadRecords(_idDittaClassificazioneDettaglio);
 	else
@@ -81,7 +85,7 @@ function onShowForm(firstShow, event, svyNavBaseOnShow)
 *
 * @param {JSEvent} event
 *
-* @properties={typeid:24,uuid:"10B246F9-6147-48ED-A8BE-8E5AD0947C1B"}
+* @properties={typeid:24,uuid:"FA30C162-AD7F-4997-ADC9-8756F7271944"}
 */
 function onHide(event) 
 {

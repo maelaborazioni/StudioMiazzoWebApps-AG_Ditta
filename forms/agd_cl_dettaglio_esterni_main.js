@@ -1,5 +1,5 @@
 /**
- * @properties={typeid:24,uuid:"EAFFB65F-93B5-410F-963D-E481ED995397"}
+ * @properties={typeid:24,uuid:"2FEDE148-3E41-4E76-960D-81E5F206C30E"}
  */
 function getButtonObject()
 {
@@ -26,11 +26,11 @@ function getButtonObject()
  * @param {String} _forceForm
  * @param {Boolean} _noConfirm
  *
- * @properties={typeid:24,uuid:"C311A4AA-8DDA-4DAF-B551-C12D8ECB3833"}
+ * @properties={typeid:24,uuid:"4B05F43D-FE1D-4C5F-B849-608AA75497FF"}
  */
 function dc_delete(_event, _triggerForm, _forceForm, _noConfirm) 
 {
-	var frm = forms.agd_cl_datigenerali_tbl;
+	var frm = forms.agd_cl_datigenerali_esterni_tbl;
 	var fs = frm.foundset;
 	
 	if(fs.getSize() == 0)
@@ -44,7 +44,7 @@ function dc_delete(_event, _triggerForm, _forceForm, _noConfirm)
 		return;
 	}
 	
-	ditte_to_ditte_classificazioni.ditte_classificazioni_to_ditte_classificazionidettaglio.deleteRecord();
+	fs.ditte_classificazioni_to_ditte_classificazionidettaglio.deleteRecord();
 }
 
 /**
@@ -53,11 +53,11 @@ function dc_delete(_event, _triggerForm, _forceForm, _noConfirm)
 * @param {String} _triggerForm
 * @param {String} _forceForm
 *
-* @properties={typeid:24,uuid:"7C2A8690-471B-45DE-B831-FDFB01B7B782"}
+* @properties={typeid:24,uuid:"BBB08533-74CF-4967-BF22-C7667C18E42C"}
 */
 function dc_edit(_event, _triggerForm, _forceForm) 
 {
-	var frm = forms.agd_cl_datigenerali_tbl;
+	var frm = forms.agd_cl_datigenerali_esterni_tbl;
 	var fs = frm.foundset;
 	
 	if(fs.getSize() == 0)
@@ -73,7 +73,7 @@ function dc_edit(_event, _triggerForm, _forceForm)
 	
 	var frmDtl = forms.agd_cl_dettaglio_dtl;
 	frmDtl._isInEdit = true;
-	frmDtl._idDittaClassificazioneDettaglio = forms.agd_cl_dettaglio_tbl.iddittaclassificazionedettaglio;
+	frmDtl._idDittaClassificazioneDettaglio = forms.agd_cl_dettaglio_esterni_tbl.iddittaclassificazionedettaglio;
 	globals.ma_utl_showFormInDialog(frmDtl.controller.getName(),'Modifica il dettaglio di classificazione');
 }
 
@@ -83,20 +83,25 @@ function dc_edit(_event, _triggerForm, _forceForm)
 * @param {String} _triggerForm
 * @param {String} _forceForm
 *
-* @properties={typeid:24,uuid:"70B8ABCC-A467-43E5-8294-F37A3A7056CB"}
+* @properties={typeid:24,uuid:"199AE36F-758C-43CB-A01C-9B8E608541E9"}
 */
 function dc_new(_event, _triggerForm, _forceForm) 
 {
-	var frm = forms.agd_cl_datigenerali_tbl;
+	var frm = forms.agd_cl_datigenerali_esterni_tbl;
 	var fs = frm.foundset;
 	
-	if(!fs.manuale || fs.codice_int <= 10)
+	if(fs.getSize() == 0)
 	{
-		globals.ma_utl_showWarningDialog('Non è possibile aggiungere un dettaglio ad una classificazione creata direttamente dallo Studio','Aggiungi un dettaglio della classificazione');
+		globals.ma_utl_showWarningDialog('Nessun classificazione a cui associare un dettaglio','Aggiungi un dettaglio della classificazione');
+		return;
+	}
+	else if(!fs.manuale || fs.codice_int <= 10)
+	{
+		globals.ma_utl_showWarningDialog('Non è possibile creare un dettaglio per una classificazione creata direttamente dallo Studio','Aggiungi un dettaglio della classificazione');
 		return;
 	}
 	
 	var frmDtl = forms.agd_cl_dettaglio_dtl;
 	frmDtl._isInEdit = false;
-	globals.ma_utl_showFormInDialog(frmDtl.controller.getName(),'Inserisci una nuovo dettaglio di classificazione');
+	globals.ma_utl_showFormInDialog(frmDtl.controller.getName(),'Inserisci un nuovo dettaglio di classificazione');
 }

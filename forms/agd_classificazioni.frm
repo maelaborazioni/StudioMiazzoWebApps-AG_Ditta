@@ -1,4 +1,4 @@
-dataSource:"db:/ma_anagrafiche/ditte_classificazioni",
+dataSource:"db:/ma_anagrafiche/ditte",
 extendsID:"E1B6951E-8C22-4464-9B19-707548D2B2DE",
 items:[
 {

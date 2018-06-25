@@ -340,8 +340,8 @@ function onDataChangeDitta(oldValue, newValue, event) {
 	
 	/** @type {JSFoundset<db:/ma_anagrafiche/lavoratori>} */
 	var _foundset = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);		
-	_foundset.addFoundSetFilterParam('ditte_to_ditte_presenze.ore_gestioneepi2', '=', 1);
-	_foundset.addFoundSetFilterParam('codice', '=', newValue)
+	var arrDitteEpi = globals.getDitteGestiteEpi2();
+	_foundset.addFoundSetFilterParam('idditta','IN',arrDitteEpi);_foundset.addFoundSetFilterParam('codice', '=', newValue)
 	_foundset.loadAllRecords()
 	
 	if (_foundset.getSize() == 1) 
