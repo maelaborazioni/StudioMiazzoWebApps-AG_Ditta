@@ -1809,6 +1809,30 @@ function getCodDittaInpsDefault(idDitta)
 /**
  * @AllowToRunInFind
  * 
+ * Restituisce la posizione INPS di default della ditta desiderata 
+ *  
+ * @param {Number} idDitta
+ *
+ * @properties={typeid:24,uuid:"B55C37EF-963C-45A1-B220-BDBC1AE65048"}
+ */
+function getDescDittaInpsDefault(idDitta)
+{
+	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inps>}*/
+	var fsDitteInps = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INPS);
+	if(fsDitteInps.find())
+	{
+		fsDitteInps.idditta = globals.getTipologiaDitta(idDitta) == globals.Tipologia.ESTERNA ? 
+				              globals.getDittaRiferimento(idDitta) : idDitta;
+		fsDitteInps.posizioneinps = 1; // posizione di default
+		if(fsDitteInps.search())
+			return fsDitteInps.ditte_inps_to_ditte_attivita.descrizioneateco;
+	}
+	return null;
+}
+
+/**
+ * @AllowToRunInFind
+ * 
  * Verifica se il turno inserito è valido per la ditta specificata 
  * 
  * @param {JSRecord<db:/ma_anagrafiche/ditte_turni>} record
@@ -1870,4 +1894,129 @@ function getDitteGestiteEpi2()
     }
     
     return [];
+}
+
+/**
+ * @param {Number} idDitta
+ * 
+ * @return {JSDataSet}
+ * @AllowToRunInFind
+ *
+ * @properties={typeid:24,uuid:"77EC42C9-32DA-4E86-81F3-795EB77D6529"}
+ */
+function getClassificazioniDitta(idDitta)
+{
+	/**@type  {JSFoundSet<db:/ma_anagrafiche/ditte_classificazioni>} */
+	var fsRagg = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_CLASSIFICAZIONI);
+	if(fsRagg.find())
+	{
+		var arrDitte = [];
+		var arrDitteInterinali = globals.getDitteInterinali();
+		if(arrDitteInterinali && arrDitteInterinali.indexOf(idDitta) != -1)
+		   arrDitte = [globals.getDittaRiferimento(idDitta)];
+		arrDitte.push(idDitta);
+		
+		fsRagg.idditta = arrDitte;
+		if(fsRagg.search())
+			return databaseManager.convertToDataSet(fsRagg,['iddittaclassificazione','codice','descrizione']);
+	}
+	
+	return null;
+}
+
+/**
+ * @AllowToRunInFind
+ * 
+ * Restituisce il dataset con le coppie (codice,descrizione) dei dettagli classificazioni
+ * 
+ * @param {Number} idDittaClassificazione
+ *
+ * @properties={typeid:24,uuid:"3E9488C7-A67A-49D5-84D9-F9B54E79B25B"}
+ */
+function getDettaglioClassificazioniDitta(idDittaClassificazione)
+{
+	/**@type  {JSFoundSet<db:/ma_anagrafiche/ditte_classificazionidettaglio>} */
+	var fsDett = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_CLASSIFICAZIONI_DETTAGLIO);
+	if(fsDett.find())
+	{
+		fsDett.iddittaclassificazione = idDittaClassificazione;
+		if(fsDett.search())
+			return databaseManager.convertToDataSet(fsDett,['codice','descrizione']);
+	}
+	
+	return null;
+}
+
+/**
+ * @AllowToRunInFind
+ * 
+ * TODO generated, please specify type and doc for the params
+ * @param idDittaClassificazione
+ *
+ * @properties={typeid:24,uuid:"C5D1CE4D-097C-41B2-B94A-718472CF9179"}
+ */
+function getCodiceClassificazione(idDittaClassificazione)
+{
+	/**@type  {JSFoundSet<db:/ma_anagrafiche/ditte_classificazioni>} */
+	var fs = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_CLASSIFICAZIONI);
+	if(fs.find())
+	{
+		fs.iddittaclassificazione = idDittaClassificazione;
+		
+		if(fs.search())
+			return fs.codice;
+	}
+	
+	return null;
+}
+
+/**
+ * @AllowToRunInFind
+ * 
+ * TODO generated, please specify type and doc for the params
+ * @param idDittaClassificazione
+ *
+ * @properties={typeid:24,uuid:"F84C218E-96A9-4F67-A6AD-BD2647C89E84"}
+ */
+function getDescClassificazione(idDittaClassificazione)
+{
+	/**@type  {JSFoundSet<db:/ma_anagrafiche/ditte_classificazioni>} */
+	var fs = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_CLASSIFICAZIONI);
+	if(fs.find())
+	{
+		fs.iddittaclassificazione = idDittaClassificazione;
+		
+		if(fs.search())
+			return fs.descrizione;
+	}
+	
+	return null;
+}
+
+/**
+ * @AllowToRunInFind
+ * 
+ * Restituisce il valore della descrizione del dettaglio della classificazione
+ * 
+ * @param {Number} idDittaClassificazione
+ * @param {String} codice
+ * 
+ * @return {String}
+ * 
+ * @properties={typeid:24,uuid:"EF9D0AE6-AFA8-49E0-9EFA-0AE5162FFD08"}
+ */
+function getDescDettaglioClassificazione(idDittaClassificazione,codice)
+{
+	/**@type  {JSFoundSet<db:/ma_anagrafiche/ditte_classificazionidettaglio>} */
+	var fsDett = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_CLASSIFICAZIONI_DETTAGLIO);
+	if(fsDett.find())
+	{
+		fsDett.iddittaclassificazione = idDittaClassificazione;
+		fsDett.codice = codice;
+		
+		if(fsDett.search())
+			return fsDett.descrizione;
+	}
+	
+	return null;
 }
