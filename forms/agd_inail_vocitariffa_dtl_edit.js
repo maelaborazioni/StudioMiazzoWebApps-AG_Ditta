@@ -157,7 +157,7 @@ function onActionConferma(event)
 {
 	databaseManager.startTransaction();
 	
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inailvocitariffa>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inailvocitariffa>}*/
 	var fsInail = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INAIL_VOCI_TARIFFA);
 	var rec;
 	

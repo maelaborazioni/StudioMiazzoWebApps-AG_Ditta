@@ -64,7 +64,7 @@ function AggiornaSelezioneSediInail(_recs)
 {
 	var _idDittaInailPosizione = ditte_to_ditte_inailposizioni.iddittainailposizione;
 	
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inailsedi>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inailsedi>}*/
 	var fsSediInail = ditte_to_ditte_inailposizioni.ditte_inailposizioni_to_ditte_inailsedi//databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INAIL_SEDI);
 	if(fsSediInail.find())
 	{

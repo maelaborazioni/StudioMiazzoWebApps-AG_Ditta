@@ -64,7 +64,7 @@ function onActionConferma(event)
 {
 	databaseManager.startTransaction();
 	
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inailgenerale>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inailgenerale>}*/
 	var fsInail = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INAIL);
 	var rec = fsInail.getRecord(fsInail.newRecord());
 	if(rec)

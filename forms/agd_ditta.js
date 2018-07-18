@@ -338,7 +338,7 @@ function onDataChangeDitta(oldValue, newValue, event) {
 	
 	_ragioneSocialeLegata = ''
 	
-	/** @type {JSFoundset<db:/ma_anagrafiche/lavoratori>} */
+	/** @type {JSFoundSet<db:/ma_anagrafiche/lavoratori>} */
 	var _foundset = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);		
 	var arrDitteEpi = globals.getDitteGestiteEpi2();
 	_foundset.addFoundSetFilterParam('idditta','IN',arrDitteEpi);_foundset.addFoundSetFilterParam('codice', '=', newValue)
@@ -376,7 +376,7 @@ function confermaNuovaDitta(event) {
     	databaseManager.startTransaction();
     	
     	// crea l'anagrafica ditta    
-    	/** @type {JSFoundset<db:/ma_anagrafiche/ditte>} */	
+    	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte>} */	
     	var fs = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);
     	
     	/** @type {JSRecord<db:/ma_anagrafiche/ditte>} */

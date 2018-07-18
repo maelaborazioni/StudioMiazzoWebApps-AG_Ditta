@@ -145,7 +145,7 @@ function onActionConferma(event)
 	}
 	else
 	{
-		/** @type {JSFoundset<db:/ma_anagrafiche/ditte_indirizzi>} */
+		/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_indirizzi>} */
 		var fsInd = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INDIRIZZI);
 	    recInd = fsInd.getRecord(fsInd.newRecord());
 	}
@@ -174,7 +174,7 @@ function onActionConferma(event)
 	}
 	
 	databaseManager.startTransaction();
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inps>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inps>}*/
 	var fs = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INPS);
 	var rec;
 	if(isInEdit)

@@ -58,7 +58,7 @@ function showLkpArchivio(event)
 }
 
 /**
- * @param {JSFoundset<db:/ma_hr/privacy_dittaarchivio>} fs
+ * @param {JSFoundSet<db:/ma_hr/privacy_dittaarchivio>} fs
  * @properties={typeid:24,uuid:"7363CCC4-63A1-40F9-A19B-8C48E7A1262A"}
  * @AllowToRunInFind
  */
@@ -70,7 +70,7 @@ function filterArchivio(fs)
 	/**
 	 * Escludi gli archivi già mappati
 	 */
-	/** @type {JSFoundset<db:/ma_hr/privacy_archiviofunzionipersone>} */
+	/** @type {JSFoundSet<db:/ma_hr/privacy_archiviofunzionipersone>} */
 	var archivioFunzioniFs = databaseManager.getFoundSet(globals.Server.MA_HR, 'privacy_archiviofunzionipersone');
 	if(archivioFunzioniFs && archivioFunzioniFs.find())
 	{

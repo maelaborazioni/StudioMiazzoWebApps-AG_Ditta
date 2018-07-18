@@ -45,7 +45,7 @@ function gotoEdit()
 }
 
 /** *
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_funzionipersone>} _foundset
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_funzionipersone>} _foundset
  *
  * @properties={typeid:24,uuid:"AF48B294-9181-4FB2-9543-4B8FCD2B01DB"}
  */

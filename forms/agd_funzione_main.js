@@ -34,7 +34,7 @@ function getButtonObject()
 }
 
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_funzionipersone>} fs
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_funzionipersone>} fs
  * 
  * @properties={typeid:24,uuid:"093FBAFB-2372-494B-B3FA-514050C8BABA"}
  * @AllowToRunInFind
@@ -52,7 +52,7 @@ function filterData(fs)
 }
 
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_funzionipersone>} fs
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_funzionipersone>} fs
  *  
  * @properties={typeid:24,uuid:"670DE91D-A822-4DBE-8E52-247F2A624625"}
  */
@@ -104,7 +104,7 @@ function aggiungiResponsabile(event, callback)
 		
 		var ruolo = null;
 		
-		/** @type {JSFoundset<db:/ma_anagrafiche/tab_tipifunzione>} */
+		/** @type {JSFoundSet<db:/ma_anagrafiche/tab_tipifunzione>} */
 		var ruoloFs = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE, 'tab_tipifunzione');
 		if(ruoloFs && ruoloFs.find())
 		{
@@ -451,7 +451,7 @@ function dc_delete_pre(_foundset, _multiDelete)
 	/**
 	 * Cancella anche le persone correlate, se non interne e non coincidenti con altre figure
 	 */
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_funzionipersone>} */
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_funzionipersone>} */
 	var funzioniFs = foundset[elements.elenco_tabless.getTabRelationNameAt(1)];
 	if(success && funzioniFs && !funzioniFs.coincidecon && !funzioniFs.personainterna && funzioniFs.manuale)
 	{

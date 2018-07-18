@@ -8,7 +8,7 @@ function gotoEdit()
 }
 
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_turni>} _foundset
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_turni>} _foundset
  * @param {String} [_program]
  * 
  * @return {Number}

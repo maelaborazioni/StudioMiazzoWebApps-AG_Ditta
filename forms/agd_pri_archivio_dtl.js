@@ -14,7 +14,7 @@ function gotoEdit()
 }
 
 /**
- * @param {JSFoundset<db:/ma_hr/privacy_dittaarchivio>} _foundset
+ * @param {JSFoundSet<db:/ma_hr/privacy_dittaarchivio>} _foundset
  * @param {String} [_program]
  *
  * @properties={typeid:24,uuid:"E6613DE1-6C32-4EE3-A846-BDC315BFF7D4"}
@@ -35,7 +35,7 @@ function dc_save_validate(_foundset, _program)
 }
 
 /**
- * @param {JSFoundset<db:/ma_hr/privacy_dittaarchivio>} fs
+ * @param {JSFoundSet<db:/ma_hr/privacy_dittaarchivio>} fs
  *
  * @properties={typeid:24,uuid:"EA7C01A9-098D-457C-A4CF-750C007BF278"}
  */

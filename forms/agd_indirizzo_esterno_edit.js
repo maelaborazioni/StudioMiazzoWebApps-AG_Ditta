@@ -28,7 +28,7 @@ function confermaNuovoIndirizzoEsterno(event)
 	{
 		databaseManager.startTransaction();
 		
-		/** @type {JSFoundset<db:/ma_anagrafiche/ditte_indirizziesterni>} */
+		/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_indirizziesterni>} */
 		var fsIndirizzoEst = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,'ditte_indirizziesterni');
 		/** @type {JSRecord<db:/ma_anagrafiche/ditte_indirizziesterni>} */
 		var newDittaIndirizzoEst = fsIndirizzoEst.getRecord(fsIndirizzoEst.newRecord());

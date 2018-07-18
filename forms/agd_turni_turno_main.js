@@ -82,7 +82,7 @@ function showEditForm(fs)
 }
 
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_turni>} fs
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_turni>} fs
  * @param {Boolean} multiDelete
  *
  * @properties={typeid:24,uuid:"9638B407-90E2-4C3B-BF0E-F69274B494F6"}

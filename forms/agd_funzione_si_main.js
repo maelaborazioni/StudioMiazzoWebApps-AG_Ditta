@@ -44,7 +44,7 @@ function compilaResponsabile(event,record)
 		/**
 		 * Imposta "Il datore coincide con il legale rappresentante" se necessario
 		 */
-		/** @type {JSFoundset<db:/ma_anagrafiche/tab_tipifunzione>} */
+		/** @type {JSFoundSet<db:/ma_anagrafiche/tab_tipifunzione>} */
 		var fs = record.foundset.ditte_funzionipersone_to_tab_tipifunzione;
 		if(fs && fs.tab_tipifunzione_to_tab_tipifunzione_altrafigura && fs.tab_tipifunzione_to_tab_tipifunzione_altrafigura.codice === globals.codLEGALERAPPRESENTANTE)
 		{
@@ -179,7 +179,7 @@ function impostaSedeTurno(event, record)
 }
 
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_funzionipersone>} fs
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_funzionipersone>} fs
  * @param {Boolean} multiDelete
  *
  * @properties={typeid:24,uuid:"B3ACB666-3318-4B35-AAD1-F5FC9267559C"}

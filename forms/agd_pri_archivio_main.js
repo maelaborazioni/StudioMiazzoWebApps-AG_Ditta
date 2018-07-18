@@ -68,7 +68,7 @@ function showEditForm(fs, mode)
 }
 
 /**
- * @param {JSFoundset<db:/ma_hr/privacy_dittaarchivio>} fs
+ * @param {JSFoundSet<db:/ma_hr/privacy_dittaarchivio>} fs
  * @param {Boolean} multidelete
  * 
  * @properties={typeid:24,uuid:"6806537F-01D9-41C8-A7EF-CB2A973A2F9F"}

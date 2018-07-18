@@ -154,7 +154,7 @@ function onShowForm(firstShow, event, svyNavBaseOnShow)
 function onActionConferma(event)
 {
 	databaseManager.startTransaction();
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inailposizioni>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inailposizioni>}*/
 	var fsInail = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INAIL_POSIZIONI);
 	var rec;
 	if(_isInEdit)

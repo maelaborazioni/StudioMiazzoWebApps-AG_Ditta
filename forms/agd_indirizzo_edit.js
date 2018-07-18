@@ -45,7 +45,7 @@ function confermaNuovoIndirizzo(event)
 	{
 		databaseManager.startTransaction();
 		
-		/** @type {JSFoundset<db:/ma_anagrafiche/ditte_sedi>}*/
+		/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_sedi>}*/
 		var fsSedi = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_SEDI);
 		var recSedi = fsSedi.getRecord(fsSedi.newRecord());
 		recSedi.codice = 0;

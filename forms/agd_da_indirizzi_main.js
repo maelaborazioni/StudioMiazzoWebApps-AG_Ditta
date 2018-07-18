@@ -1,5 +1,5 @@
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_indirizzi>} [fs]
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_indirizzi>} [fs]
  * @AllowToRunInFind
  *
  * @properties={typeid:24,uuid:"A2D3D496-50DA-4F82-AB97-FEAD611CB6AA"}
@@ -16,7 +16,7 @@ function filterData(fs)
 }
 
 /**
- * @param {JSFoundset<db:/ma_anagrafiche/ditte_indirizzi>} [fs]
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte_indirizzi>} [fs]
  *
  * @properties={typeid:24,uuid:"FE5DDD7B-F5DC-44AF-ABE7-EC415595AFE0"}
  */
