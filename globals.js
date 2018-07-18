@@ -28,7 +28,7 @@ var TIPO_LIQUIDAZIONE = { annoprecedente : 1, sinoal : 0 };
  */
 function apriElencoRecapitiIndirizzoDitta(event, formToDisplay)
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_indirizzi>} */
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_indirizzi>} */
 	var indirizziFoundset = forms[event.getFormName()].foundset;
 	
 	var currIdDitta = forms.agd_header_dtl.idditta;
@@ -1279,7 +1279,7 @@ function filtraDittaNonGestiteStudio(_fs)
  * Sono le ditte normali più le ditte esterne con tipologia 'Esterni' 
  * (in pratica tutte tranne le interinali che seguono quelle della ditta legata)
  * 
- * @param {JSFoundset<db:/ma_anagrafiche/ditte>} _fs
+ * @param {JSFoundSet<db:/ma_anagrafiche/ditte>} _fs
  *
  * @properties={typeid:24,uuid:"F06A00B7-7BE4-4B78-B397-0331223E33AE"}
  * @AllowToRunInFind
@@ -1725,7 +1725,7 @@ function apriPopupAnaDitta(event,idditta)
  */
 function getDitte()
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte>} */
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte>} */
 	var fsDitte = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);
 	fsDitte.loadAllRecords();
 	
@@ -1746,7 +1746,7 @@ function getDitte()
  */
 function isCodiceDittaDisponibile(codNuovaDitta)
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte>} */
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte>} */
 	var fsDitte = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);
     if(fsDitte.find())
     {
@@ -1769,7 +1769,7 @@ function isCodiceDittaDisponibile(codNuovaDitta)
  */
 function getIdDittaInpsDefault(idDitta)
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inps>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inps>}*/
 	var fsDitteInps = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INPS);
 	if(fsDitteInps.find())
 	{
@@ -1793,7 +1793,7 @@ function getIdDittaInpsDefault(idDitta)
  */
 function getCodDittaInpsDefault(idDitta)
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inps>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inps>}*/
 	var fsDitteInps = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INPS);
 	if(fsDitteInps.find())
 	{
@@ -1817,7 +1817,7 @@ function getCodDittaInpsDefault(idDitta)
  */
 function getDescDittaInpsDefault(idDitta)
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte_inps>}*/
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte_inps>}*/
 	var fsDitteInps = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_INPS);
 	if(fsDitteInps.find())
 	{
@@ -1884,7 +1884,7 @@ function updateDatiGeneraliEsterni()
  */
 function getDitteGestiteEpi2()
 {
-	/** @type {JSFoundset<db:/ma_anagrafiche/ditte>} */
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte>} */
 	var fsDitte = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);
     if(fsDitte.find())
     {
