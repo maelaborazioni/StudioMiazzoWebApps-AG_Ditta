@@ -1709,6 +1709,14 @@ function apriPopupAnaDitta(event,idditta)
 	    presenze.methodArguments = [event,idditta];    
 	    if(globals.getTipologiaDitta(idditta))
 	    	presenze.enabled = false;
+	
+	// currently suspended    
+//	if(getTipologiaDitta(idditta) == Tipologia.ESTERNA)
+//	{
+//		var tipologia = popUpMenu.addMenuItem('Cambia tipologia',cambiaTipologia);
+//		    tipologia.methodArguments = [event,idditta];
+//		    tipologia.enabled = true;
+//	}
 	    
 	if(source != null)
 	   popUpMenu.show(forms[frm].elements[event.getElementName()].getLocationX() + forms[frm].elements[event.getElementName()].getWidth() + 100,
@@ -2019,4 +2027,57 @@ function getDescDettaglioClassificazione(idDittaClassificazione,codice)
 	}
 	
 	return null;
+}
+
+/**
+ * Passa da ditta esterna ad interinale e viceversa
+ * 
+ * @param {Number} _itemInd
+ * @param {Number} _parItem
+ * @param {Boolean} _isSel
+ * @param {String} _parMenTxt
+ * @param {String} _menuTxt
+ * @param {JSEvent} event
+ * @param {Number} idditta
+ *
+ * @properties={typeid:24,uuid:"A17AFBA6-0315-44D1-A7A6-7DEF38D03C30"}
+ * @AllowToRunInFind
+ */
+function cambiaTipologia(_itemInd, _parItem, _isSel, _parMenTxt, _menuTxt,event,idditta)
+{
+	var msg = "La tipologia della ditta passerà da ";
+	/** @type {JSFoundSet<db:/ma_anagrafiche/ditte>} */
+	var fsDitte = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE);
+    if(fsDitte.find())
+    {
+    	fsDitte.idditta = idditta;
+    	if(fsDitte.search())
+    	{
+    		var tipoEsterni = fsDitte.ditte_to_ditte_legami.tipoesterni;
+    		tipoEsterni == 1 ? msg += "esterna ad interinale." : msg += "interinale ad esterna.";
+    		msg += "<br/>Si desidera proseguire?";
+    		
+    		var answer = globals.ma_utl_showYesNoQuestion(msg,'Cambia tipologia ditta esterna');
+    		
+    		if(answer)
+    		{
+    			databaseManager.startTransaction();
+    			fsDitte.ditte_to_ditte_legami.tipoesterni = (tipoEsterni == 1) ? 0 : 1;
+    			
+    			if(!databaseManager.commitTransaction())
+    			{
+    				databaseManager.rollbackTransaction();
+    				globals.ma_utl_showErrorDialog("Errore durante la modifica della tipologia di esterna",'Cambia tipologia ditta esterna');
+    				return;
+    			}
+    			
+    			databaseManager.refreshRecordFromDatabase(fsDitte,1);
+    		}
+    	}
+    	else
+    		globals.ma_utl_showInfoDialog("Ditta non trovata in anagrafica",'Cambia tipologia ditta esterna');
+	}
+    else
+      	globals.ma_utl_showInfoDialog("Cannot go to find mode",'Cambia tipologia ditta esterna');
+	
 }

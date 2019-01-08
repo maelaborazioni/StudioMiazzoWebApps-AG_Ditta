@@ -133,3 +133,25 @@ function dc_delete(_event, _triggerForm, _forceForm, _noConfirm)
 {
 	return _super.dc_delete(_event, _triggerForm, _forceForm, _noConfirm)
 }
+
+/**
+ * Callback method for when form is shown.
+ *
+ * @param {Boolean} firstShow form is shown first time after load
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @private
+ * @override
+ *
+ * @properties={typeid:24,uuid:"3CDC0B55-DCDB-4E64-B113-3782A5E40322"}
+ */
+function onShowForm(firstShow, event) 
+{
+	_super.onShowForm(firstShow, event);
+		
+	elements.fld_tipologia_esterna.visible =
+		elements.lbl_tipologia_esterna.visible =
+			elements.fld_codice_legata.visible =
+				elements.lbl_codice_legata.visible = (tipologia == 1);
+	
+}
