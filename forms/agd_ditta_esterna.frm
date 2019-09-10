@@ -88,7 +88,7 @@ typeid:4,
 uuid:"31B6D3FD-9E07-4869-85DE-B5F42033AFF6"
 },
 {
-enabled:false,
+enabled:true,
 extendsID:"9EDA43C0-4481-4022-98D8-2028CEA30C4B",
 location:"51,90",
 typeid:7,
@@ -353,7 +353,7 @@ uuid:"AB82C8A6-B11E-4DE3-B490-6420F1B29A86",
 visible:false
 },
 {
-enabled:false,
+enabled:true,
 extendsID:"A19052C7-7895-47C2-ADDC-9288CF88EA79",
 location:"71,90",
 typeid:4,
@@ -455,7 +455,7 @@ uuid:"DDA972C4-7583-474E-B4B8-5D0749F60102",
 visible:false
 },
 {
-enabled:false,
+enabled:true,
 extendsID:"FA227B15-3E02-4003-9652-F1F19BD59E45",
 location:"5,90",
 typeid:4,

@@ -176,12 +176,6 @@ function onDataChangeTipoLegame(oldValue, newValue, event)
 		_codiceLegata = null;
 		_ragioneSocialeLegata = null;
 	}
-	
-    elements.fld_codice_legata.enabled =
-	   elements.fld_ragione_sociale_legata.enabled = 
-		   elements.lbl_codice_legata.enabled = 
-			   elements.lbl_ragione_sociale_legata.enabled =
-				   elements.btn_selditta.enabled = newValue;
 				   
 	return true;			   
 }

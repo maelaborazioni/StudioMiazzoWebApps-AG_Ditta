@@ -530,7 +530,6 @@ function onShowForm(_firstShow, _event) {
 	_super.onShowForm(_firstShow, _event);
 	inizializzaCampi();
 	globals.ma_utl_setStatus(globals.Status.EDIT,controller.getName());
-	
 }
 
 /**
