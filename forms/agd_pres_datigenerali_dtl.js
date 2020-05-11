@@ -15,7 +15,8 @@ function onShowForm(firstShow, event, svyNavBaseOnShow)
 		elements.fld_esp_tr_conv.visible =
 			elements.lbl_esp.visible = 
 				elements.lbl_esp_tr.visible = 
-					elements.lbl_esp_tr_conv.visible = visibleCampiGestEst; 
+					elements.lbl_esp_tr_conv.visible 
+						elements.btn_lkp_tracciato.visible = visibleCampiGestEst; 
 }
 
 /**

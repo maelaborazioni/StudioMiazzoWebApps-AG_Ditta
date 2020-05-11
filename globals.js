@@ -1935,6 +1935,33 @@ function getClassificazioniDitta(idDitta)
 /**
  * @AllowToRunInFind
  * 
+ * TODO generated, please specify type and doc for the params
+ * @param idDitta
+ * @param codClassificazione
+ * 
+ * @return {Boolean}
+ * 
+ * @properties={typeid:24,uuid:"39ECF51F-1616-4755-BAFA-9CF85874480C"}
+ */
+function isClassificazioneManuale(idDitta,codClassificazione)
+{
+	/**@type  {JSFoundSet<db:/ma_anagrafiche/ditte_classificazioni>} */
+	var fsRagg = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE,globals.Table.DITTE_CLASSIFICAZIONI);
+	if(fsRagg.find())
+	{
+		fsRagg.idditta = idDitta;
+		fsRagg.codice = codClassificazione;
+		
+		if(fsRagg.search())
+			return parseInt(fsRagg.codice,10) > 10;
+	}
+	
+	return false;
+}
+
+/**
+ * @AllowToRunInFind
+ * 
  * Restituisce il dataset con le coppie (codice,descrizione) dei dettagli classificazioni
  * 
  * @param {Number} idDittaClassificazione
